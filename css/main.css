@@ -1,0 +1,17 @@
+body{
+  background-image: url('../images/kitchen.jpg');
+  background-size: 100%;
+  width: 100%;
+}
+.main-header{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+}
+.flav-town-holder{
+  width:60%;
+}
+.flav-town{
+  width:100%;
+}
