@@ -6,6 +6,7 @@ George:
     ☐ Create connection to api
         Proper
         ☐ Send an XML request locally to a script in either rails or python (idk which)
+        ☐ Investigate django
         ☐ Script processes request and calls relevant api for information
         Hack
         ☐ Test getJSON from webpage for x request
