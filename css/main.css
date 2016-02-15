@@ -1,7 +1,13 @@
 body{
   background-image: url('../images/kitchen.jpg');
   background-size: 100%;
+  background-repeat: no-repeat;
   width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .main-header{
   font-size: 60px;
@@ -11,7 +17,16 @@ body{
 }
 .flav-town-holder{
   width:60%;
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .flav-town{
   width:100%;
+  background-color: black;
+}
+.flav-town-text{
+  color: white;
+  text-align: center;
+  font-size: 40px;
 }
