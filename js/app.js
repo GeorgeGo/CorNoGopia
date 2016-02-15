@@ -17,16 +17,9 @@ var key = '?key='+API_KEY+'&q=';
 var search = 'potatoes';
 var query = website+'search'+key+search;
 
-var req = new XMLHttpRequest();
-req.open('GET', query, true);
-req.send();
-if(req.status == 200) {
-   dump(req.responseText);
-}
-
-console.log(req.status);
-console.log(req.statusText);
-console.log(req.responseText);
+$.getJSON(query,function(data) {
+    console.log(data);
+});
 
 
 // Send an XML request locally to a script in either rails or python (idk which)
