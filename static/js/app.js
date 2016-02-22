@@ -17,11 +17,13 @@ $(function () {
             type: 'POST',
             data: {food:'tomatoes'},
             success: function (response) {
-                console.log('success');
-                console.log(response);
+                var r = JSON.parse(response);
+                console.log(r['recipes'][0]);
+                for (var i = 0; i < r['count']; i++) {
+                    console.log(r['recipes'][i]['title']);
+                }
             },
             error: function (error) {
-                console.log('error');
                 console.log(error);
             }
         });
