@@ -1,5 +1,5 @@
 body{
-  background-image: url('../images/kitchen.jpg');
+  background-color: white;
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -11,7 +11,7 @@ body{
 }
 .main-header{
   font-size: 60px;
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 2%;
 }
@@ -23,10 +23,10 @@ body{
 }
 .flav-town{
   width:100%;
-  background-color: black;
+  background-color: white;
 }
 .flav-town-text{
-  color: white;
+  color: black;
   text-align: center;
   font-size: 40px;
 }
