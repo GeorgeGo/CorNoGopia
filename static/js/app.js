@@ -17,10 +17,16 @@ $(function () {
             type: 'POST',
             data: {food:'tomatoes'},
             success: function (response) {
+              $('#recDivHolder').empty();
                 var r = JSON.parse(response);
                 console.log(r['recipes'][0]);
                 for (var i = 0; i < r['count']; i++) {
-                    console.log(r['recipes'][i]['title']);
+                    var recDiv = document.createElement("div")
+                    recDiv.style.width = '100px';
+                    recDiv.style.height = '100px';
+                    recDiv.style.backgroundImage = "url("+r['recipes'][i]['image_url']+")";
+                    $('#recDivHolder').append(recDiv);
+                    console.log(r['recipes'][i]['image_url']);
                 }
             },
             error: function (error) {
