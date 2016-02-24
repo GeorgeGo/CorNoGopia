@@ -30,3 +30,19 @@ body{
   text-align: center;
   font-size: 40px;
 }
+.recipeDiv{
+    width: 50%;
+    height:400px;
+    background-size: auto;
+    background-position: center;
+    position: relative;
+    display: inline-block;
+}
+.recipeNameDiv{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}

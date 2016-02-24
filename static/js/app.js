@@ -17,10 +17,11 @@ function getRecipes() {
 			var r = JSON.parse(response);
 			for (var i = 0; i < r['count']; i++) {
 				var recipeDiv = document.createElement("div");
-				recipeDiv.style.width = '100%';
-				recipeDiv.style.height = '100px';
+				recipeDiv.setAttribute('class', 'recipeDiv');
 				recipeDiv.style.backgroundImage = "url(" + r['recipes'][i]['image_url'] + ")";
+				recipeDiv.style.backgroundRepeat = "no-repeat";
 				var recipeNameDiv = document.createElement("div");
+				recipeNameDiv.setAttribute('class', 'recipeNameDiv')
 				recipeNameDiv.innerHTML = r['recipes'][i]['title'];
 				recipeDiv.appendChild(recipeNameDiv);
 				$('#recipeDivHolder').append(recipeDiv);
