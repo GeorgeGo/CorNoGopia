@@ -12,9 +12,7 @@ def main():
 @app.route('/getRecipes', methods=['POST'])
 def getRecipes():
     try:
-        # _food = request.form['food']
-        # print _food
-        _food = 'tomatoes'
+        _food = request.form['ingredient']
         if _food:
             options = {'key': '5dbe8dc691de2b3d8db331019416a9e5', 'q': _food}
             r = requests.get('http://food2fork.com/api/search', params=options)
