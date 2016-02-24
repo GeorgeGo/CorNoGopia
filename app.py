@@ -12,10 +12,12 @@ def main():
 @app.route('/getRecipes', methods=['POST'])
 def getRecipes():
     try:
-        print request.form
-        _food = request.form['ingredient']
+        #HACK: Adding an extra entry because the last one doesnt matter
+        _food = json.dumps(request.form.to_dict().values())
         if _food:
-            options = {'key': '5dbe8dc691de2b3d8db331019416a9e5', 'q': _food}
+            food = _food[:-1]+',\"\"]'
+            options = {'key': '5dbe8dc691de2b3d8db331019416a9e5', 'q': food}
+            print options
             r = requests.get('http://food2fork.com/api/search', params=options)
             return (json.dumps(r.json()), 200)
     except Exception as e:

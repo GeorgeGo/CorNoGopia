@@ -10,4 +10,6 @@ George:
         ✔ Script processes request and calls relevant api for information @done(2016-02-24 12:12) @project(George)
         Hack
         ✔ Test getJSON from webpage for x request @done(2016-02-24 12:12) @project(George)
-    ☐ Check serialize for multiple units
+    ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
+    ☐ Pressing enter on multiple ingredientsForms should work
+    ☐ When adding new forms don't remove content
