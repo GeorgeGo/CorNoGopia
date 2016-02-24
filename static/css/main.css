@@ -33,16 +33,17 @@ body{
 .recipeDiv{
     width: 50%;
     height:400px;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     position: relative;
     display: inline-block;
 }
 .recipeNameDiv{
+    font-family: serif;
+    font-size: 50px;
+    background-color: white;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    bottom: 0%;
     left: 0;
 
 }
