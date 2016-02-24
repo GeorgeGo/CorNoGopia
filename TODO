@@ -1,12 +1,13 @@
 Noah:
     ☐ Set up basic css
-    ☐ Set up basic html
+    ✔ Set up basic html @done(2016-02-24 12:13) @project(Noah)
 
 George:
-    ☐ Create connection to api
+    ✔ Create connection to api @done(2016-02-24 12:12) @project(George)
         Proper
-        ☐ Send an XML request locally to a script in either rails or python (idk which)
-        ☐ Investigate django
-        ☐ Script processes request and calls relevant api for information
+        ✔ Send an XML request locally to a script in either rails or python (idk which) @done(2016-02-24 12:12) @project(George)
+        ✔ Investigate django @done(2016-02-24 12:12) @project(George)
+        ✔ Script processes request and calls relevant api for information @done(2016-02-24 12:12) @project(George)
         Hack
-        ☐ Test getJSON from webpage for x request
+        ✔ Test getJSON from webpage for x request @done(2016-02-24 12:12) @project(George)
+    ☐ Check serialize for multiple units
