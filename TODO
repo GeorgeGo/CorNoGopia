@@ -13,3 +13,4 @@ George:
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
     ☐ Pressing enter on multiple ingredientsForms should work
     ☐ When adding new forms don't remove content
+    ☐ Fix drop down menu

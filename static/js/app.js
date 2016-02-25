@@ -39,7 +39,7 @@ $('#getRecipes').click(function () {
 
 $('#ingredientsNumber').change(function (event) {
 	$('#ingredientsForm').empty();
-	var a = $('#ingredientsNumber').serializeArray()[0].value;
+	var a = $('#ingredientsNumber').val();
 	for (var i = 0; i < a; i++) {
 		var formEntry = document.createElement("input");
 		formEntry.type = "text";
