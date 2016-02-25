@@ -37,7 +37,7 @@ $('#getRecipes').click(function () {
 	$('#ingredientsForm').submit();
 });
 
-$('#ingredientsNumber').submit(function (event) {
+$('#ingredientsNumber').change(function (event) {
 	$('#ingredientsForm').empty();
 	var a = $('#ingredientsNumber').serializeArray()[0].value;
 	for (var i = 0; i < a; i++) {

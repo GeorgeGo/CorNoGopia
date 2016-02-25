@@ -17,7 +17,7 @@ body{
 }
 .flav-town-holder{
   width:60%;
-  margin-top: 15%;
+  margin-top: 2%;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -29,6 +29,13 @@ body{
   color: black;
   text-align: center;
   font-size: 40px;
+}
+.ingredientHolder{
+width: 80%;
+    /*text-align: center;*/
+}
+.form-input{
+    width: 40%;
 }
 .recipeDiv{
     width: 50%;
