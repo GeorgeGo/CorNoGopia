@@ -42,9 +42,10 @@ $('#ingredientsNumber').change(function (event) {
 	var a = $('#ingredientsNumber').val();
 	for (var i = 0; i < a; i++) {
 		var formEntry = document.createElement("input");
+		formEntry.setAttribute('class', 'new-ingredient');
 		formEntry.type = "text";
 		formEntry.name = "ingredient_"+i;
-		$('#ingredientsForm').append("Ingredient "+(i+1),"<br>",formEntry,"<br>");
+		$('#ingredientsForm').append("Ingredient: "+(i+1),' ',formEntry,"<br>");
 	}
 	event.preventDefault();
 });

@@ -32,10 +32,20 @@ body{
 }
 .ingredientHolder{
 width: 80%;
-    /*text-align: center;*/
+    text-align: center;
 }
 .form-input{
     width: 40%;
+}
+.ingredient-form{
+    display: inline-block;
+}
+.drop-down-num{
+    display: inline;
+    margin-right: 1%;
+}
+.new-ingredient{
+    display: inline-block;
 }
 .recipeDiv{
     width: 50%;
