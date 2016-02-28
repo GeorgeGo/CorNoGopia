@@ -45,7 +45,7 @@ $('#ingredientsNumber').change(function (event) {
 		formEntry.setAttribute('class', 'new-ingredient');
 		formEntry.type = "text";
 		formEntry.name = "ingredient_"+i;
-		$('#ingredientsForm').append("Ingredient: "+(i+1),' ',formEntry,"<br>");
+		$('#ingredientsForm').append(formEntry);
 	}
 	event.preventDefault();
 });

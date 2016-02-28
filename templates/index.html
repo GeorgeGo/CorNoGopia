@@ -17,25 +17,35 @@
 			</p>
 		</div>
 	</div>
-	<div class="ingredientHolder">
+	<div class="search-area">
 		<select id="ingredientsNumber" class="drop-down-num" name="">
-			<option value='1'>1</option>
+			<option selected value='1'>1</option>
 			<option value='2'>2</option>
 			<option value='3'>3</option>
 			<option value='4'>4</option>
 			<option value='5'>5</option>
 		</select>
 		<form id="ingredientsForm" class='ingredient-form'>
-			Ingredient:
 			<input type="text" name="ingredient" class="form-input">
 		</form>
-		<div id='getRecipes'><span>GET RECIPE</span></div>
+		<div id='getRecipes' class="output-button"><span>GET RECIPE</span></div>
+	</div>
+	<div id="dd" class="wrapper-dropdown-1" tabindex="1">
+	<span>Gender</span>
+    <ul class="dropdown">
+        <li><a href="#">Male</a></li>
+        <li><a href="#">Female</a></li>
+    </ul>
 	</div>
 
 
 	<div id="recipeDivHolder" class=""></div>
+
+
 	<script type="text/javascript" src="../static/vendors/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="../static/js/app.js"></script>
+	<script type="text/javascript" src="../static/js/dropdown.js"></script>
+
 </body>
 
 </html>
