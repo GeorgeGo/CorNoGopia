@@ -18,20 +18,23 @@ function getRecipes() {
 			var r = JSON.parse(response);
 			for (var i = 0; i < r['count']; i++) {
 				var recipeDiv = $('<div></div>');
-				recipeDiv.addClass(recipeDiv);
+				recipeDiv.addClass('recipeDiv');
 				recipeDiv.css('background-image', "url(" + r['recipes'][i]['image_url'] + ")");
 				recipeDiv.css('backgroundRepeat', "no-repeat");
 				var recipeNameDiv = $('<div></div>');
-				recipeNameDiv.addClass(recipeNameDiv);
+				recipeNameDiv.addClass('recipeNameDiv');
 				recipeNameDiv.text(r['recipes'][i]['title']);
-				recipeDiv.appendChild(recipeNameDiv);
-				$('.recipeDiv').click(function (event){
-					$('.recipeDiv').addClass(recipe-card);
-					$('.recipeDiv').removeClass(recipeDiv);
+				recipeDiv.append(recipeNameDiv);
+				recipeDiv.click(function (event){
+					if (this.class) {
+
+					}
+					recipeDiv.addClass('recipe-card');
+					recipeDiv.removeClass('recipeDiv');
 				})
-				$('.recipe-card').click(function (event){
-					$('.recipe-card').addClass(recipeDiv);
-					$('.recipe-card').removeClass(recipeDiv);
+				recipe-card.click(function (event){
+					recipe-card.addClass('recipeDiv');
+					recipe-card.removeClass('recipeDiv');
 				})
 				$('#recipeDivHolder').append(recipeDiv);
 			}
