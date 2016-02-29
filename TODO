@@ -1,6 +1,7 @@
 Noah:
-    ☐ Set up basic css
+    ✔ Set up basic css @done(2016-02-29 01:05) @project(Noah)
     ✔ Set up basic html @done(2016-02-24 12:13) @project(Noah)
+    ☐ Fix drop down menu
 
 George:
     ✔ Create connection to api @done(2016-02-24 12:12) @project(George)
@@ -13,6 +14,7 @@ George:
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
     ☐ Pressing enter on multiple ingredientsForms should work
     ☐ When adding new forms don't remove content
-    ☐ Fix drop down menu
     ☐ Make ingredients request one call on server
     ☐ Make ingredients request one call on client
+    ☐ Investigate issue with results showing up on no entry
+    ☐ Check on what clicks will trigger a search
