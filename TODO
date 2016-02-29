@@ -4,7 +4,7 @@ Noah:
 
 George:
     ✔ Create connection to api @done(2016-02-24 12:12) @project(George)
-        Proper
+        Proper:
         ✔ Send an XML request locally to a script in either rails or python (idk which) @done(2016-02-24 12:12) @project(George)
         ✔ Investigate django @done(2016-02-24 12:12) @project(George)
         ✔ Script processes request and calls relevant api for information @done(2016-02-24 12:12) @project(George)
@@ -14,3 +14,5 @@ George:
     ☐ Pressing enter on multiple ingredientsForms should work
     ☐ When adding new forms don't remove content
     ☐ Fix drop down menu
+    ☐ Make ingredients request one call on server
+    ☐ Make ingredients request one call on client

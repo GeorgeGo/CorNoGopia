@@ -24,11 +24,21 @@ function getRecipes() {
 				recipeNameDiv.setAttribute('class', 'recipeNameDiv')
 				recipeNameDiv.innerHTML = r['recipes'][i]['title'];
 				recipeDiv.appendChild(recipeNameDiv);
+				$.post({
+					url: '/getIngredients',
+					data: r['recipes'][i]['recipe_id'],
+					success: function (response) {
+						console.log(response);
+					},
+					error: function (error) {
+						console.log('There was an error with ingredients retrieval');
+					}
+				})
 				$('#recipeDivHolder').append(recipeDiv);
 			}
 		},
 		error: function(error) {
-			alert('There was an error');
+			console.log('There was an error with recipe retrieval');
 		}
 	});
 }

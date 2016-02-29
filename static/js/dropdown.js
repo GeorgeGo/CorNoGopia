@@ -9,16 +9,7 @@
 
 //...
 
-$(function() {
 
-	var dd = new DropDown( $('#dd') );
-
-	$(document).click(function() {
-		// all dropdowns
-		$('.wrapper-dropdown-1').removeClass('active');
-	});
-
-});
 
 function DropDown(el) {
     this.dd = el;
@@ -28,6 +19,7 @@ function DropDown(el) {
     this.index = -1;
     this.initEvents();
 }
+
 DropDown.prototype = {
     initEvents : function() {
         var obj = this;
@@ -51,3 +43,14 @@ DropDown.prototype = {
         return this.index;
     }
 }
+
+$(function() {
+
+	var dd = new DropDown( $('#dd') );
+
+	$(document).click(function() {
+		// all dropdowns
+		$('.wrapper-dropdown-1').removeClass('active');
+	});
+
+});
