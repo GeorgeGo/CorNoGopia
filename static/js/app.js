@@ -17,19 +17,27 @@ function getRecipes() {
 			$('#recipeDivHolder').empty();
 			var r = JSON.parse(response);
 			for (var i = 0; i < r['count']; i++) {
-				var recipeDiv = document.createElement("div");
-				recipeDiv.setAttribute('class', 'recipeDiv');
-				recipeDiv.style.backgroundImage = "url(" + r['recipes'][i]['image_url'] + ")";
-				recipeDiv.style.backgroundRepeat = "no-repeat";
-				var recipeNameDiv = document.createElement("div");
-				recipeNameDiv.setAttribute('class', 'recipeNameDiv')
-				recipeNameDiv.innerHTML = r['recipes'][i]['title'];
+				var recipeDiv = $('<div></div>');
+				recipeDiv.addClass(recipeDiv);
+				recipeDiv.css('background-image', "url(" + r['recipes'][i]['image_url'] + ")");
+				recipeDiv.css('backgroundRepeat', "no-repeat");
+				var recipeNameDiv = $('<div></div>');
+				recipeNameDiv.addClass(recipeNameDiv);
+				recipeNameDiv.text(r['recipes'][i]['title']);
 				recipeDiv.appendChild(recipeNameDiv);
+				$('.recipeDiv').click(function (event){
+					$('.recipeDiv').addClass(recipe-card);
+					$('.recipeDiv').removeClass(recipeDiv);
+				})
+				$('.recipe-card').click(function (event){
+					$('.recipe-card').addClass(recipeDiv);
+					$('.recipe-card').removeClass(recipeDiv);
+				})
 				$.post({
 					url: '/getIngredients',
 					data: r['recipes'][i]['recipe_id'],
 					success: function (response) {
-						console.log(response);
+						// console.log(response);
 					},
 					error: function (error) {
 						console.log('There was an error with ingredients retrieval');
