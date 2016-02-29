@@ -2,6 +2,10 @@ Noah:
     ✔ Set up basic css @done(2016-02-29 01:05) @project(Noah)
     ✔ Set up basic html @done(2016-02-24 12:13) @project(Noah)
     ☐ Fix drop down menu
+    ☐ flip recipeDiv on click
+    ☐ change class names to snake case
+    ✔ test ctrl + d @done(2016-02-29 13:56) @project(Noah)
+
 
 George:
     ✔ Create connection to api @done(2016-02-24 12:12) @project(George)
