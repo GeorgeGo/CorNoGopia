@@ -1,3 +1,4 @@
+V1:
 Noah:
     ✔ Set up basic css @done(2016-02-29 01:05) @project(Noah)
     ✔ Set up basic html @done(2016-02-24 12:13) @project(Noah)
@@ -5,8 +6,6 @@ Noah:
     ☐ flip recipeDiv on click
     ☐ change class names to snake case
     ✔ test ctrl + d @done(2016-02-29 13:56) @project(Noah)
-
-
 George:
     ✔ Create connection to api @done(2016-02-24 12:12) @project(George)
         Proper:
@@ -16,9 +15,15 @@ George:
         Hack
         ✔ Test getJSON from webpage for x request @done(2016-02-24 12:12) @project(George)
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
+    ☐ Add pip install -r requirements.text
     ☐ Pressing enter on multiple ingredientsForms should work
     ☐ When adding new forms don't remove content
     ☐ Make ingredients request one call on server
     ☐ Make ingredients request one call on client
     ☐ Investigate issue with results showing up on no entry
     ☐ Check on what clicks will trigger a search
+
+V2:
+George:
+    ☐ Let user exclude an ingredient result
+    ☐ Accounts? Preferences?
