@@ -15,13 +15,14 @@ George:
         Hack
         ✔ Test getJSON from webpage for x request @done(2016-02-24 12:12) @project(George)
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
-    ☐ Add pip install -r requirements.txt
+    ✔ Add pip install -r requirements.txt @done(2016-03-01 16:54) @project(George)
     ☐ Pressing enter on multiple ingredientsForms should work
     ☐ When adding new forms don't remove content
     ☐ Make ingredients request one call on server
     ☐ Make ingredients request one call on client
     ☐ Investigate issue with results showing up on no entry
     ☐ Check on what clicks will trigger a search
+    ☐ Convert post output to objects for use when switching
 
 V2:
 George:
