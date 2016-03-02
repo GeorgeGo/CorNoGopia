@@ -26,16 +26,20 @@ function getRecipes() {
 				recipeNameDiv.text(r['recipes'][i]['title']);
 				recipeDiv.append(recipeNameDiv);
 				recipeDiv.click(function (event){
-					if (this.class) {
-
+					if (this.class = 'recipeDiv') {
+						console.log('if');
+						recipeDiv.addClass('recipe-card');
+						recipeDiv.removeClass('recipeDiv');
+					}else {
+						console.log('else');
+						recipeDiv.addClass('recipe-card');
+						recipeDiv.removeClass('recipeDiv');
 					}
-					recipeDiv.addClass('recipe-card');
-					recipeDiv.removeClass('recipeDiv');
 				})
-				recipe-card.click(function (event){
-					recipe-card.addClass('recipeDiv');
-					recipe-card.removeClass('recipeDiv');
-				})
+				// recipe-card.click(function (event){
+				// 	recipe-card.addClass('recipeDiv');
+				// 	recipe-card.removeClass('recipeDiv');
+				// })
 				$('#recipeDivHolder').append(recipeDiv);
 			}
 		},
