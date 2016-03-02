@@ -18,7 +18,7 @@ George:
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
     ✔ Add pip install -r requirements.txt @done(2016-03-01 16:54) @project(George)
     ☐ Pressing enter on multiple ingredientsForms should work
-    ☐ When adding new forms don't remove content
+    ✔ When adding new forms don't remove content @done(2016-03-02 12:17) @project(George)
     ☐ Make ingredients request one call on server
     ☐ Make ingredients request one call on client
     ☐ Investigate issue with results showing up on no entry

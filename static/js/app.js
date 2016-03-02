@@ -70,11 +70,22 @@ $('#getRecipes').click(function () {
 // })
 
 $('#ingredientsNumber').change(function (event) {
-	$('#ingredientsForm').empty();
-	var a = $('#ingredientsNumber').val();
-	for (var i = 0; i < a; i++) {
-		var formEntry = $("<input type=\"text\" name=\"ingredient_"+i+"\" class=\"new-ingredient\">");
-		$('#ingredientsForm').append(formEntry);
+	var previousLength = $('#ingredientsForm').children().length;
+	var newLength = $('#ingredientsNumber').val();
+	console.log("Previous Length: "+previousLength);
+	console.log("New Length:"+newLength);
+
+	if (newLength >= previousLength) {
+		var difference = newLength - previousLength;
+		for (var i = 0; i < difference; i++) {
+			var formEntry = $("<input type=\"text\" name=\"ingredient_"+i+"\" class=\"new-ingredient\">");
+			$('#ingredientsForm').append(formEntry);
+		}
+	} else {
+		var difference = previousLength - newLength;
+		for (var i = 0; i < difference; i++) {
+			$('#ingredientsForm input:last-child').remove()
+		}
 	}
 	event.preventDefault();
 });
