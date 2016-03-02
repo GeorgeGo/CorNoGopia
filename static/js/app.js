@@ -26,10 +26,10 @@ function getRecipes() {
 				recipeNameDiv.text(r['recipes'][i]['title']);
 				recipeDiv.append(recipeNameDiv);
 				recipeDiv.click(function (event){
-					if ($(this).class === 'recipeDiv') {
+					if (this.className === 'recipeDiv') {
 						$(this).addClass('recipe-card');
 						$(this).removeClass('recipeDiv');
-					}else if ($(this).class === 'recipe-card') {
+					}else if (this.className === 'recipe-card') {
 						$(this).addClass('recipeDiv');
 						$(this).removeClass('recipe-card');
 					}
