@@ -27,11 +27,18 @@ function getRecipes() {
 				recipeDiv.append(recipeNameDiv);
 				recipeDiv.click(function (event){
 					if (this.className === 'recipeDiv') {
+						$(this).css('background-image', 'none');
 						$(this).addClass('recipe-card');
 						$(this).removeClass('recipeDiv');
+						$(this).children().addClass('recipe-name-card');
+						$(this).children().removeClass('recipeNameDiv');
+
 					}else if (this.className === 'recipe-card') {
+						$(this).css('background-image', "url(" + r['recipes'][i]['image_url'] + ")");
 						$(this).addClass('recipeDiv');
 						$(this).removeClass('recipe-card');
+						$(this).children().addClass('recipeNameDiv');
+						$(this).children().removeClass('recipe-name-card');
 					}
 				})
 				// recipe-card.click(function (event){
