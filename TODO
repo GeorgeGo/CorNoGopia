@@ -15,7 +15,7 @@ George:
         Hack
         ✔ Test getJSON from webpage for x request @done(2016-02-24 12:12) @project(George)
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
-    ☐ Add pip install -r requirements.text
+    ☐ Add pip install -r requirements.txt
     ☐ Pressing enter on multiple ingredientsForms should work
     ☐ When adding new forms don't remove content
     ☐ Make ingredients request one call on server
@@ -27,3 +27,4 @@ V2:
 George:
     ☐ Let user exclude an ingredient result
     ☐ Accounts? Preferences?
+    ☐ Cycle through potential api calls
