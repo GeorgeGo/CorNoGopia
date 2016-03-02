@@ -26,14 +26,12 @@ function getRecipes() {
 				recipeNameDiv.text(r['recipes'][i]['title']);
 				recipeDiv.append(recipeNameDiv);
 				recipeDiv.click(function (event){
-					if (this.class = 'recipeDiv') {
-						console.log('if');
-						recipeDiv.addClass('recipe-card');
-						recipeDiv.removeClass('recipeDiv');
-					}else {
-						console.log('else');
-						recipeDiv.addClass('recipe-card');
-						recipeDiv.removeClass('recipeDiv');
+					if ($(this).class === 'recipeDiv') {
+						$(this).addClass('recipe-card');
+						$(this).removeClass('recipeDiv');
+					}else if ($(this).class === 'recipe-card') {
+						$(this).addClass('recipeDiv');
+						$(this).removeClass('recipe-card');
 					}
 				})
 				// recipe-card.click(function (event){
