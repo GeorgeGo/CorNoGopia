@@ -54,7 +54,7 @@ function getRecipes() {
 	});
 }
 
-$('#getRecipes').click(function () {
+$('#getRecipes span').click(function () {
 	$('#ingredientsForm').submit();
 });
 
