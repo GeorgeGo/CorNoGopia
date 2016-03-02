@@ -6,6 +6,7 @@ Noah:
     ☐ flip recipeDiv on click
     ☐ change class names to snake case
     ✔ test ctrl + d @done(2016-02-29 13:56) @project(Noah)
+    ☐ STYLE!
 George:
     ✔ Create connection to api @done(2016-02-24 12:12) @project(George)
         Proper:
