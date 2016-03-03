@@ -13,7 +13,6 @@ George:
         ✔ Send an XML request locally to a script in either rails or python (idk which) @done(2016-02-24 12:12) @project(George)
         ✔ Investigate django @done(2016-02-24 12:12) @project(George)
         ✔ Script processes request and calls relevant api for information @done(2016-02-24 12:12) @project(George)
-        Hack
         ✔ Test getJSON from webpage for x request @done(2016-02-24 12:12) @project(George)
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
     ✔ Add pip install -r requirements.txt @done(2016-03-01 16:54) @project(George)
