@@ -22,9 +22,9 @@ George:
     ☐ Update Noah on data structure
     ☐ Test ingredients request on click
     ☐ Assign ingredients request on click to divs
+    ✔ Check that ingredients updates on click @done(2016-03-03 11:23) @project(George)
     ☐ Investigate issue with results showing up on no entry
-    ☐ Convert post output to objects for use when switching
-    ☐ Check that ingredients updates on click
+    ✔ Convert post output to objects for use when switching @done(2016-03-03 11:23) @project(George)
     ✔ Check on what clicks will trigger a search @done(2016-03-02 12:20) @project(George)
 
 
