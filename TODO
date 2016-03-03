@@ -16,13 +16,17 @@ George:
         ✔ Test getJSON from webpage for x request @done(2016-02-24 12:12) @project(George)
     ✔ Check serialize for multiple units @done(2016-02-24 13:32) @project(George)
     ✔ Add pip install -r requirements.txt @done(2016-03-01 16:54) @project(George)
-    ☐ Pressing enter on multiple ingredientsForms should work
+    ✔ Pressing enter on multiple ingredientsForms should work @done(2016-03-02 18:13) @project(George)
     ✔ When adding new forms don't remove content @done(2016-03-02 12:17) @project(George)
-    ☐ Make ingredients request one call on server
-    ☐ Make ingredients request one call on client
+    ✔ Make ingredients request on click @done(2016-03-03 11:22) @project(George)
+    ☐ Update Noah on data structure
+    ☐ Test ingredients request on click
+    ☐ Assign ingredients request on click to divs
     ☐ Investigate issue with results showing up on no entry
-    ✔ Check on what clicks will trigger a search @done(2016-03-02 12:20) @project(George)
     ☐ Convert post output to objects for use when switching
+    ☐ Check that ingredients updates on click
+    ✔ Check on what clicks will trigger a search @done(2016-03-02 12:20) @project(George)
+
 
 V2:
 George:
