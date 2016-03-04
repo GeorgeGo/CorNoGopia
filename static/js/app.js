@@ -26,6 +26,7 @@ function Recipe(recipeObject){
 		recipeNameDiv.addClass('recipeNameDiv');
 		recipeNameDiv.text(this.title);
 		div.append(recipeNameDiv);
+		var self = this;
 		div.click(function (event){
 			console.log(this);
 			console.log($(this));
@@ -36,8 +37,8 @@ function Recipe(recipeObject){
 				$(this).children().addClass('recipe-name-card');
 				$(this).children().removeClass('recipeNameDiv');
 			}else if (this.className === 'recipe-card') {
-				// how to get this.image_url
-				// $(this).css('background-image', "url(" + recipes[i].image_url + ")");
+				// TODO: how to get this.image_url
+				$(this).css('background-image', "url(" + self.image_url + ")");
 				$(this).addClass('recipeDiv');
 				$(this).removeClass('recipe-card');
 				$(this).children().addClass('recipeNameDiv');
@@ -45,7 +46,7 @@ function Recipe(recipeObject){
 			}
 		});
 		div.click(function (event) {
-			if (ingredients == 0) {
+			if (this.ingredients == 0) {
 				$.post({
 					url: '/getIngredients',
 					data: this.recipe_id,
