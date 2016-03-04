@@ -2,14 +2,8 @@
 // Connect to food api
 // Potential APIS
 //	 https://developer.edamam.com/
-
-
-// Test Case:
-// User only has potatoes
-// Provides Recipe for mashed potatoes
-// query = 'http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3';
-
-
+// http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3
+// http://food2fork.com/api/search?key=373a612eeeae2813e001680f04b585db&q=beans,rice
 
 // Recipe Object Array
 function Recipe(recipeObject){
@@ -32,6 +26,7 @@ function getRecipes() {
 		data: $('#ingredientsForm').serialize(),
 		success: function(response) {
 			$('#recipeDivHolder').empty();
+			recipes = [];
 			var r = JSON.parse(response);
 			for (var i = 0; i < r['count']; i++) {
 				recipes.push(new Recipe(r['recipes'][i]));
@@ -88,7 +83,7 @@ $('#getRecipes span').click(function () {
 // 	error: function (error) {
 // 		console.log('There was an error with ingredients retrieval');
 // 	}
-})
+// })
 
 $('#ingredientsNumber').change(function (event) {
 	var previousLength = $('#ingredientsForm').children().length;
