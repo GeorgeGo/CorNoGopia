@@ -30,7 +30,7 @@ def getRecipes():
 @app.route('/getIngredients', methods=['POST'])
 def getIngredients():
     try:
-        _rid = request.form
+        _rid = request.form['rId']
         options = {'key': key, 'rId': _rid}
         r = requests.get('http://food2fork.com/api/get', params=options)
         return (json.dumps(r.json()), 200)

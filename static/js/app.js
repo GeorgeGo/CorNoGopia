@@ -1,4 +1,4 @@
-
+recipes = []
 // Connect to food api
 // Potential APIS
 //	 https://developer.edamam.com/
@@ -18,6 +18,7 @@ function Recipe(recipeObject){
 	this.ingredients = [];
 	this.state = 0; // 0 is picture; 1 is card
 	this.get_div = function () {
+		var self = this;
 		var div = $('<div></div>');
 		div.addClass('recipeDiv');
 		div.css('background-image', "url(" + this.image_url + ")");
@@ -26,10 +27,7 @@ function Recipe(recipeObject){
 		recipeNameDiv.addClass('recipeNameDiv');
 		recipeNameDiv.text(this.title);
 		div.append(recipeNameDiv);
-		var self = this;
 		div.click(function (event){
-			console.log(this);
-			console.log($(this));
 			if (this.className === 'recipeDiv') {
 				$(this).css('background-image', 'none');
 				$(this).addClass('recipe-card');
@@ -37,7 +35,6 @@ function Recipe(recipeObject){
 				$(this).children().addClass('recipe-name-card');
 				$(this).children().removeClass('recipeNameDiv');
 			}else if (this.className === 'recipe-card') {
-				// TODO: how to get this.image_url
 				$(this).css('background-image', "url(" + self.image_url + ")");
 				$(this).addClass('recipeDiv');
 				$(this).removeClass('recipe-card');
@@ -46,25 +43,23 @@ function Recipe(recipeObject){
 			}
 		});
 		div.click(function (event) {
-			if (this.ingredients == 0) {
+			if (self.ingredients == 0) {
 				$.post({
 					url: '/getIngredients',
-					data: this.recipe_id,
+					data: {'rId': self.recipe_id},
 					success: function (response) {
 						var r = JSON.parse(response);
-						this.ingredients = r['ingredients'];
+						self.ingredients = r['recipe']['ingredients'];
 					},
 					error: function (error) {
-						console.log('There was an error with ingredients retrieval');
+						alert('There was an error with ingredients retrieval\nCode: '+error);
 					}
-				})
+				});
 			}
 		});
-		return div
+		return div;
 	}
 }
-
-recipes = []
 
 function getRecipes() {
 	$.post({
@@ -80,7 +75,7 @@ function getRecipes() {
 			}
 		},
 		error: function(error) {
-			console.log('There was an error with recipe retrieval');
+			alert('There was an error with recipe retrieval\nCode: '+error);
 		}
 	});
 }

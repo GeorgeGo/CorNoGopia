@@ -20,7 +20,7 @@ George:
     ✔ When adding new forms don't remove content @done(2016-03-02 12:17) @project(George)
     ✔ Make ingredients request on click @done(2016-03-03 11:22) @project(George)
     ✔ Update Noah on data structure @done(2016-03-03 17:21) @project(George)
-    ☐ Test ingredients request on click
+    ✔ Test ingredients request on click @done(2016-03-04 10:42) @project(George)
     ✔ Assign ingredients request on click to divs @done(2016-03-04 10:23) @project(George)
     ✔ Check that ingredients updates on click @done(2016-03-03 11:23) @project(George)
     ✔ Investigate issue with results showing up on no entry @done(2016-03-04 07:49) @project(George)
