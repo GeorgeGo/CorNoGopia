@@ -19,7 +19,7 @@ George:
     ✔ Pressing enter on multiple ingredientsForms should work @done(2016-03-02 18:13) @project(George)
     ✔ When adding new forms don't remove content @done(2016-03-02 12:17) @project(George)
     ✔ Make ingredients request on click @done(2016-03-03 11:22) @project(George)
-    ☐ Update Noah on data structure
+    ✔ Update Noah on data structure @done(2016-03-03 17:21) @project(George)
     ☐ Test ingredients request on click
     ☐ Assign ingredients request on click to divs
     ✔ Check that ingredients updates on click @done(2016-03-03 11:23) @project(George)
