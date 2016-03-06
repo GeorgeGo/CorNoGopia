@@ -5,7 +5,7 @@ recipes = []
 // http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3
 // http://food2fork.com/api/search?key=373a612eeeae2813e001680f04b585db&q=beans,rice
 
-// Recipe Object Array
+// Recipe Object
 function Recipe(recipeObject){
 	this.publisher = recipeObject['publisher'];
 	this.title = recipeObject['title'];
