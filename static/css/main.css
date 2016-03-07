@@ -95,7 +95,7 @@ body {
 	height: 400px;
 	background-size: cover;
 	background-position: center;
-	background-color: black;
+	background-color: blue;
 	/*background-image: none;*/
 	position: relative;
 	display: inline-block;
@@ -105,7 +105,16 @@ body {
 	font-size: 20px;
 	background-color: white;
 	position: absolute;
+	display: none;
 	bottom: 2px;
+	left: 2px;
+}
+.ingredient-card-list{
+	font-family: serif;
+	font-size: 20px;
+	background-color: white;
+	position: absolute;
+	top: 2px;
 	left: 2px;
 }
 
