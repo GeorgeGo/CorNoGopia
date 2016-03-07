@@ -28,7 +28,7 @@ George:
     ✔ investigate issue with image reappearing on click @done(2016-03-04 10:27) @project(George)
     ✔ Convert post output to objects for use when switching @done(2016-03-03 11:23) @project(George)
     ✔ Check on what clicks will trigger a search @done(2016-03-02 12:20) @project(George)
-    ☐ on change remove empty fields then cut ending stuff
+    ✔ on change remove empty fields then cut ending stuff @done(2016-03-06 17:02) @project(George)
 
 
 V2:
