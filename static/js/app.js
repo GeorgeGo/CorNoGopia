@@ -1,9 +1,7 @@
-recipes = []
-// Connect to food api
 // Potential APIS
-//	 https://developer.edamam.com/
-// http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3
-// http://food2fork.com/api/search?key=373a612eeeae2813e001680f04b585db&q=beans,rice
+// 	https://developer.edamam.com/
+// 	http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3
+recipes = []
 
 // Recipe Object
 function Recipe(recipeObject){
@@ -33,6 +31,12 @@ function Recipe(recipeObject){
 				$.post({
 					url: '/getIngredients',
 					data: {'rId': self.recipe_id},
+					beforeSend: function () {
+
+					},
+					complete: function () {
+
+					},
 					success: function (response) {
 						console.log('hello');
 						var r = JSON.parse(response);
