@@ -4,7 +4,7 @@ Noah:
     ✔ Set up basic html @done(2016-02-24 12:13) @project(Noah)
     ☐ Fix drop down menu
     ☐ change class names to snake case
-    ☐ show ingredients
+    ✔ show ingredients @done(2016-03-10 13:43) @project(Noah)
     ✔ flip recipeDiv on click @done(2016-03-06 16:51) @project(Noah)
     ✔ test ctrl + d @done(2016-02-29 13:56) @project(Noah)
 
