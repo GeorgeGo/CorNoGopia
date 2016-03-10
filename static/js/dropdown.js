@@ -1,56 +1,23 @@
-//...
-
-// $('#dd').click( function(event){
-// 	console.log('done');
-// 	console.log($(this));
-// 	$(this).toggleClass('active');
-// 	return false;
-// });
-
-//...
-
-
-
-function DropDown(el) {
-    this.dd = el;
-    this.placeholder = this.dd.children('span');
-    this.opts = this.dd.find('ul.dropdown > li');
-    this.val = '';
-    this.index = -1;
-    this.initEvents();
+function dropdownOn(){
+    $('.wrapper-dropdown').on( 'click',function(e){
+        console.log('on');
+        $('.number-li').show();
+        e.stopPropagation();
+    });
 }
-
-DropDown.prototype = {
-    initEvents : function() {
-        var obj = this;
-
-        obj.dd.on('click', function(event){
-            $(this).toggleClass('active');
-            return false;
-        });
-
-        obj.opts.on('click',function(){
-            var opt = $(this);
-            obj.val = opt.text();
-            obj.index = opt.index();
-            obj.placeholder.text('Gender: ' + obj.val);
-        });
-    },
-    getValue : function() {
-        return this.val;
-    },
-    getIndex : function() {
-        return this.index;
-    }
+function dropdownOff(){
+    $('html').on('click', function(){
+        console.log('off');
+        $('.number-li').hide();
+    });
 }
-
-$(function() {
-
-	var dd = new DropDown( $('#dd') );
-
-	$(document).click(function() {
-		// all dropdowns
-		$('.wrapper-dropdown-1').removeClass('active');
-	});
-
-});
+function dropdownLi(){
+    $('.number-li').on( 'click',function(e){
+        console.log('on');
+        $('.number-li').hide();
+        e.stopPropagation();
+    });
+}
+dropdownOn();
+dropdownOff();
+dropdownLi();
