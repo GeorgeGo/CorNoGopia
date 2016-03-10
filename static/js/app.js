@@ -32,10 +32,10 @@ function Recipe(recipeObject){
 					url: '/getIngredients',
 					data: {'rId': self.recipe_id},
 					beforeSend: function () {
-
+						console.log("before");
 					},
 					complete: function () {
-
+						console.log('completes');
 					},
 					success: function (response) {
 						console.log('hello');
