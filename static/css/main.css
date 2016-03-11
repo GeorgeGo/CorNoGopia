@@ -50,7 +50,7 @@ body {
 	margin-right: auto;
 	float: left;
 	margin-right: 30%;
-	height: 3em;
+	/*height: 3em;*/
 }
 .new-ingredient {
     width: 100%;
@@ -142,6 +142,7 @@ body {
 	width: 100%;
 }
 .search-top-row{
-	width: 100%
+	width: 100%;
+	height: auto;
 
 }
