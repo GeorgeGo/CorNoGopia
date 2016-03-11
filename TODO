@@ -36,10 +36,13 @@ George:
     ☐ Accounts? Preferences?
     ☐ Cycle through potential api calls
     ☐ Add loading menu during get recipe
+    ✔ Fix dropdown functionality @done(2016-03-10 16:14) @project(George)
     ✔ Deploy to Heroku @done(2016-03-10 14:42) @project(George)
 
 Noah:
     ☐ STYLE!
     ☐ change class names to snake case
     ☐ review naming conventions
-    ☐ Fix drop down menu
+    ☐ Fix dropdown and ingredients output z order
+    ☐ Fix values when adding new spans
+    ✔ Fix drop down menu @done(2016-03-10 15:53) @project(Noah)

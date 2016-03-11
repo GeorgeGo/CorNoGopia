@@ -112,9 +112,6 @@ function Recipe(recipeObject){
 				}
 			}
 		});
-		// div.click(function (event) {
-		//
-		// });
 		return div;
 	}
 }
@@ -140,24 +137,6 @@ function getRecipes() {
 
 $('#getRecipes span').click(function () {
 	$('#ingredientsForm').submit();
-});
-
-$('#ingredientsNumber').change(function (event) {
-	var previousLength = $('#ingredientsForm').children().length;
-	var newLength = $('#ingredientsNumber').val();
-	if (newLength >= previousLength) {
-		var difference = newLength - previousLength;
-		for (var i = 0; i < difference; i++) {
-			var formEntry = $("<input type=\"text\" name=\"ingredient_"+i+"\" class=\"new-ingredient\">");
-			$('#ingredientsForm').append(formEntry);
-		}
-	} else {
-		var difference = previousLength - newLength;
-		for (var i = 0; i < difference; i++) {
-			$('#ingredientsForm input:last-child').remove()
-		}
-	}
-	event.preventDefault();
 });
 
 $('#ingredientsForm').keypress(function(event) {
