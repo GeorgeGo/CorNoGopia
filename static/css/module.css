@@ -1,11 +1,25 @@
-@media (max-width: 1500px) and (min-width: 1200px) {
+@media (max-width: 900px) and (min-width: 0) {
   .landing-title {
-	  font-size: 15vh;
-	  height: 5vh;
-	  line-height: 5vh;
+	font-size: 7vh;
+	line-height: 12vh;
+	top: 15%;
+  }
+  .landing-title-background{
+	font-size: 6vh;
+	height: 3vh;
+	top: 15%;
+    margin-top: 4.5vh;
+  }
+  .enter-button{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 150%;
+    border: 2px solid white;
+    background-color: rgba(236, 142, 88, 0.25);
   }
 }
-@media (max-width: 1199px) and (min-width: 700px) {
+/*@media (max-width: 1199px) and (min-width: 700px) {
   .landing-title {
     font-size: 10vh;
 	height: 3vh;
@@ -18,4 +32,4 @@
 	height: 1vh;
 	line-height: 1vh;
   }
-}
+}*/
