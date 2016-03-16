@@ -10,6 +10,43 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
+.landing-container{
+	background-image: url('../images/berries.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+.landing-title{
+	background-color: #DDC588;
+	width: 30%;
+	height:7vh;
+	text-align: center;
+	line-height: 7vh;
+	font-size: 200%;
+	margin-left: 35%;
+	margin-right: 35%;
+	position: absolute;
+	bottom: 60%;
+	border-radius: 2%;
+	opacity: 0.9;
+}
+.enter-button{
+	background-color: #EC8E58;
+	width: 20%;
+	height:7vh;
+	text-align: center;
+	line-height: 7vh;
+	font-size: 200%;
+	margin-left: 40%;
+	margin-right: 40%;
+	position: absolute;
+	bottom: 50%;
+	border-radius: 2%;
+	opacity: 0.9;
+}
+.main-container{
+}
 .main-header {
 	font-size: 60px;
 	color: black;

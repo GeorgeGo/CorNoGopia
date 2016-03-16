@@ -19,7 +19,7 @@ function dropdownLi(){
     	if (newLength >= previousLength) {
     		var difference = newLength - previousLength;
     		for (var i = 0; i < difference; i++) {
-    			var formEntry = $("<input type=\"text\" name=\"ingredient_"+i+"\" class=\"new-ingredient\">");   
+    			var formEntry = $("<input type=\"text\" name=\"ingredient_"+i+"\" class=\"new-ingredient\">");
     			$('#ingredientsForm').append(formEntry);
     		}
     	} else {
@@ -32,6 +32,27 @@ function dropdownLi(){
     });
 }
 
+function landing(){
+    console.log('dine');
+    $('.main-container').hide()
+
+}
+function enterMain(){
+    $('.enter-button').on('click',function(e){
+        $('.landing-container').hide();
+        $('.main-container').fadeIn( "slow" );
+    })
+}
+
+
+
+
+
+
+
+
+landing();
+enterMain();
 dropdownOn();
 dropdownOff();
 dropdownLi();
