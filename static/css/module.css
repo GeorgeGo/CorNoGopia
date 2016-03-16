@@ -1,0 +1,21 @@
+@media (max-width: 1500px) and (min-width: 1200px) {
+  .landing-title {
+	  font-size: 15vh;
+	  height: 5vh;
+	  line-height: 5vh;
+  }
+}
+@media (max-width: 1199px) and (min-width: 700px) {
+  .landing-title {
+    font-size: 10vh;
+	height: 3vh;
+	line-height: 3vh;
+  }
+}
+@media (max-width: 699px) and (min-width: 0px) {
+  .landing-title {
+    font-size: 6vh;
+	height: 1vh;
+	line-height: 1vh;
+  }
+}
