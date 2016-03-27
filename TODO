@@ -1,7 +1,8 @@
 V2:
 George:
     ☐ Let user exclude an ingredient result
-    ☐ Accounts? Preferences?
+    ☐ User Accounts
+    ☐ Preferences
     ☐ Cycle through potential api calls
     ☐ Add loading menu during get recipe
     ✔ Fix dropdown functionality @done(2016-03-10 16:14) @project(George)
