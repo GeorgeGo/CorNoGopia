@@ -6,9 +6,9 @@
   }
   .landing-title-background{
 	font-size: 6vh;
-	height: 3vh;
+	height: 1.5vh;
 	top: 15%;
-    margin-top: 4.5vh;
+    margin-top: 5.25vh;
   }
   .enter-button{
     width: 30%;
@@ -17,6 +17,10 @@
     font-size: 150%;
     border: 2px solid white;
     background-color: rgba(236, 142, 88, 0.25);
+    box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-webkit-box-sizing: border-box;
   }
 }
 /*@media (max-width: 1199px) and (min-width: 700px) {
