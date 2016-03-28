@@ -11,7 +11,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
-.landing-container{
+.landing-container {
 	background-image: url('../images/table.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -19,18 +19,18 @@ body {
 	width: 100%;
 	position: relative;
 }
-.title-container{
+.title-container {
 	overflow: hidden;
 	position: absolute;
 	bottom: 60%;
 	height: 20vh;
 	width: 100vw;
 }
-.landing-title{
+.landing-title {
 	overflow: hidden;
 	color: white;
 	width: 82%;
-	height:12vh;
+	height: 12vh;
 	text-align: center;
 	line-height: 12vh;
 	margin-left: 9%;
@@ -41,13 +41,13 @@ body {
 	border-radius: 2%;
 	overflow: visible;
 }
-.landing-title-background{
-	    background-color: rgba(236, 142, 88, 0.85);
+.landing-title-background {
+	background-color: rgba(236, 142, 88, 0.85);
 	width: 82%;
-	height:6vh;
+	height: 3vh;
 	text-align: center;
-	line-height: 6vh;
-	margin-top: 3vh;
+	line-height: 3vh;
+	margin-top: 4.5vh;
 	margin-left: 9%;
 	margin-right: 9%;
 	font-size: 6vh;
@@ -55,26 +55,28 @@ body {
 	top: 40%;
 	border-radius: 2%;
 	overflow: visible;
-
 }
-.enter-button{
+.enter-button {
 	/*background-color: #EC8E58;*/
 	color: white;
-	width: 20%;
-	height:7vh;
+	width: 30%;
+	height: 7vh;
 	text-align: center;
 	line-height: 7vh;
 	font-size: 200%;
-	margin-left: 40%;
-	margin-right: 40%;
+	margin-left: 35%;
+	margin-right: 35%;
 	position: absolute;
 	bottom: 50%;
-	border-radius: 5%;
-	border: 5px solid white;
+	border-radius: 1%;
+	border: 2px solid white;
 	background-color: rgba(236, 142, 88, 0.25);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
-.main-container{
-}
+.main-container {}
 .main-header {
 	font-size: 60px;
 	color: black;
@@ -98,6 +100,7 @@ body {
 }
 .search-area {
 	width: 100%;
+	z-index: 2;
 }
 .ingredient-holder {
 	width: 80%;
@@ -110,26 +113,45 @@ body {
 	/*padding: 0 0 0 0;*/
 }
 .ingredient-form {
-	width: 35%;
+	width: 25%;
 	display: inline-block;
 	margin-right: auto;
 	float: left;
-	margin-right: 30%;
+	position: absolute;
+	z-index: 2;
 	/*height: 3em;*/
 }
 .new-ingredient {
-    width: 100%;
-    display: inline-block;
-    margin-right: auto;
-    float: left;
-	height: 3em;
+	width: 100%;
+	/*display: inline-block;*/
+	position: relative;
+	margin-right: auto;
+	float: left;
+	height: 52px;
+	background-color: white;
 	font-size: 100%;
 	padding: 0 0 0 0;
+	border: 2px solid black;
+	z-index: 2;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
-.output-button{
-    display: block;
-    clear: left;
-    text-align: center;
+.output-button {
+	float: left;
+	position: absolute;
+	margin-left: 62.5%;
+	margin-right: 27.5%
+	display: inline-block;
+	text-align: center;
+	line-height: 52px;
+	width: 10%;
+	background-color: red;
+	height: 52px;
+}
+.recipeDivHolder {
+	z-index: 1;
 }
 .recipeDiv {
 	width: 50%;
@@ -138,6 +160,7 @@ body {
 	background-position: center;
 	position: relative;
 	display: inline-block;
+	z-index: 1;
 }
 .recipeNameDiv {
 	font-family: serif;
@@ -166,7 +189,7 @@ body {
 	bottom: 2px;
 	left: 2px;
 }
-.ingredient-card-list{
+.ingredient-card-list {
 	font-family: serif;
 	font-size: 20px;
 	background-color: white;
@@ -174,40 +197,43 @@ body {
 	top: 2px;
 	left: 2px;
 }
-.wrapper-dropdown{
+.wrapper-dropdown {
 	float: left;
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 30%;
+	margin-left: 32.5%;
 	width: 5%;
 	background-color: red;
 	height: 52px;
 	text-align: center;
-
 }
-.dropdown-label{
+.dropdown-label {
 	height: 52px;
 	line-height: 52px;
-		/*width: 5%;*/
+	/*width: 5%;*/
 	text-align: center;
 }
-.number-ul{
+.number-ul {
 	width: 100%;
 }
-.number-li{
+.number-li {
 	display: none;
 	height: 52px;
 	line-height: 52px;
 	width: 100%;
-
 }
-.number-li-link{
+.number-li-link {
 	display: block;
+	background-color: blue;
 	text-decoration: none;
 	width: 100%;
+	z-index: 2;
+	position: relative;
 }
-.search-top-row{
+.search-top-row {
 	width: 100%;
 	height: auto;
-
+}
+#recipeDivHolder{
+	clear: left;
 }
