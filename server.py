@@ -13,14 +13,6 @@ current_key_id = 0
 def main():
     return render_template('index.html')
 
-@app.route('/getRecipes_notf2f')
-def getRecipes2():
-    try:
-        r = requests.get('')
-        return (json.dumps(r.json()), 200)
-    except Exception as e:
-        return (json.dumps(e), 400)
-
 @app.route('/getRecipes', methods=['POST'])
 def getRecipes():
     try:
