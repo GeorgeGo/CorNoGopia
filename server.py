@@ -3,23 +3,9 @@ import requests
 
 app = Flask(__name__)
 
-keys = ['373a612eeeae2813e001680f04b585db',
-        '5dbe8dc691de2b3d8db331019416a9e5']
-
-current_key_id = 0
-
-
 @app.route('/')
 def main():
     return render_template('index.html')
-
-@app.route('/getRecipes_notf2f')
-def getRecipes2():
-    try:
-        r = requests.get('')
-        return (json.dumps(r.json()), 200)
-    except Exception as e:
-        return (json.dumps(e), 400)
 
 @app.route('/getRecipes', methods=['POST'])
 def getRecipes():
@@ -29,20 +15,8 @@ def getRecipes():
             food = str(_food[0])
             for item in _food[1:]:
                 food+=','+item
-            r = requests.get('http://food2fork.com/api/search'+'?key='+keys[current_key_id]+'&q='+food)
+            r = requests.get('http://www.recipepuppy.com/api/?i='+food)
             return (json.dumps(r.json()), 200)
-    # except Rate limit exceeded, change index and rerun
-    except Exception as e:
-        return (json.dumps({'error': str(e)}), 400)
-
-
-@app.route('/getIngredients', methods=['POST'])
-def getIngredients():
-    try:
-        _rid = request.form['rId']
-        options = {'key': keys[current_key_id], 'rId': _rid}
-        r = requests.get('http://food2fork.com/api/get', params=options)
-        return (json.dumps(r.json()), 200)
     except Exception as e:
         return (json.dumps({'error': str(e)}), 400)
 
