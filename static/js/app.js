@@ -1,6 +1,3 @@
-// Potential APIS
-// 	https://developer.edamam.com/
-// 	http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3
 recipes = []
 
 // Recipe Object
@@ -47,29 +44,18 @@ function Recipe(recipeObject){
                             var recipe_card_ingredients_list = $('<ul></ul>');
                             for (var i = 0; i < self.ingredients.length; i++) {
                                 recipe_card_ingredients_list.append('<li>'+self.ingredients[i]+'</li>');
-                                console.log(self.ingredients[i]);
-                                console.log('hi');
                             }
                             $(that).css('background-image', 'none');
                             $(that).addClass('recipe-card');
                             $(that).removeClass('recipeDiv');
                             recipe_card_ingredients_list.addClass('ingredient-card-list');
                             $(that).append(recipe_card_ingredients_list);
-
-
                         }else if (that.className === 'recipe-card') {
                             $(that).empty();
-                            // var recipeNameDiv = $('<div></div>');
-                            // recipeNameDiv.addClass('recipeNameDiv');
-                            // recipeNameDiv.text(self.title);
-                            // $(that).append(recipeNameDiv);
-                            // $(that).children().text('');
                             $(that).css('backgroundRepeat', "no-repeat");
                             var recipeNameDiv = $('<div></div>');
                             recipeNameDiv.addClass('recipeNameDiv');
-                            // recipeNameDiv.text(that.title);
                             $(that).append(recipeNameDiv);
-
                             $(':nth-child(2)', that).text(self.title);
                             $(that).css('background-image', "url(" + self.image_url + ")");
                             $(that).addClass('recipeDiv');
@@ -94,8 +80,6 @@ function Recipe(recipeObject){
                     $(this).removeClass('recipeDiv');
                     recipe_card_ingredients_list.addClass('ingredient-card-list');
                     $(this).append(recipe_card_ingredients_list);
-
-
                 }else if (this.className === 'recipe-card') {
                     $(this).empty();
                     var recipeNameDiv = $('<div></div>');
