@@ -2,6 +2,7 @@ V2:
 George:
 ☐ Identify api
 ☐ Implement new api with title, image, source, ingredients
+☐ Incorporate USDA api
 ☐ Drop down box overlay when deselected populated search with csv
 ☐ Let user exclude an ingredient result
 ☐ User Accounts

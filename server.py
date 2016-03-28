@@ -16,6 +16,7 @@ def getRecipes():
             for item in _food[1:]:
                 food+=','+item
             r = requests.get('http://www.recipepuppy.com/api/?i='+food)
+            print r.json()
             return (json.dumps(r.json()), 200)
     except Exception as e:
         return (json.dumps({'error': str(e)}), 400)
