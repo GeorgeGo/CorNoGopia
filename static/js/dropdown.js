@@ -7,7 +7,7 @@ function dropdownOn(){
 function dropdownOff(){
     $('html').on('click', function(){
         $('.number-li').hide();
-        compress();
+        // compress();
     });
 }
 function dropdownLi(){
