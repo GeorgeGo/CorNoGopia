@@ -10,6 +10,15 @@ function dropdownOff(){
         compress();
     });
 }
+
+function compress(){
+    let a = $('#ingredientsForm input').children().length;
+    console.log(a);
+    // store contents of all inputs in array if non-empty
+    // empty all but one input
+    // store contents of array in first input
+}
+
 function dropdownLi(){
     $('.number-li').on('click',function(e){
         $('.number-li').hide();
