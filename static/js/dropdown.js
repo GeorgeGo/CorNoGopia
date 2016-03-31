@@ -3,9 +3,10 @@ $('.wrapper-dropdown').on('click',function(e){
 });
 
 $('html').on('click', function(e){
-    if(e.target.className == 'wrapper-dropdown' || e.target.className == 'dropdown-label'){
-        console.log('click2');
+    if(e.target.className == 'new-ingredient'){
+    }else if(e.target.className == 'wrapper-dropdown' || e.target.className == 'dropdown-label'){
     }else{
+        compress();
         $('.number-li').hide();
     }
 });
@@ -26,13 +27,11 @@ function compress(){
     var formEntry = $('<input type=\'text\' name=\'ingredient_0\' class=\'new-ingredient\' value=\''+compressValue+'\'>');
     form.append(formEntry);
     // compress should only be called if not clicking on dropdown or span
-    // store contents of all inputs in array if non-empty
-    // empty all but one input
-    // store contents of array in first input
 }
 
 function expand(){
-    
+    // clicking back on the span should expand the contents into how ever many
+    // items there are    
 }
 
 function dropdownLi(){
@@ -40,6 +39,8 @@ function dropdownLi(){
         $('.number-li').hide();
         // Lengths here should be determined by span or integrate with
         // expand/compress
+        // potentially just add how ever many the user wants - 1
+        // unsure about how to proceed with expand
         var previousLength = + $('.wrapper-dropdown .dropdown-label').text();
     	var newLength = + this.id[this.id.length-1];
         $('.wrapper-dropdown .dropdown-label').text(newLength);
