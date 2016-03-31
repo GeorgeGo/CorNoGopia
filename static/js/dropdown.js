@@ -1,14 +1,14 @@
-function dropdownOn(){
-    $('.wrapper-dropdown').on('click',function(e){
-        $('.number-li').show();
-        e.stopPropagation();
-    });
-}
-function dropdownOff(){
-    $('html').on('click', function(){
+$('.wrapper-dropdown').on('click',function(e){
+    $('.number-li').show();
+});
+
+$('html').on('click', function(e){
+    if(e.target.className == 'wrapper-dropdown' || e.target.className == 'dropdown-label'){
+        console.log('click2');
+    }else{
         $('.number-li').hide();
-    });
-}
+    }
+});
 
 function compress(){
     var form = $('#ingredientsForm');
@@ -59,6 +59,4 @@ function dropdownLi(){
     });
 }
 
-dropdownOn();
-dropdownOff();
 dropdownLi();
