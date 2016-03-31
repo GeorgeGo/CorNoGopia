@@ -7,6 +7,10 @@ George:
 ☐ Drop down box overlay when deselected populated search with csv
 ☐ Implement compress function
 ✘ Let user exclude an ingredient result @cancelled (2016-03-28 14:29)
+☐ Add budgeting
+☐ Add groceries
+☐ Grocery Estimates
+☐ Pull cheapest and nearest products locally and online
 ☐ User Accounts
 ☐ Preferences
 ☐ Cycle through potential api calls
