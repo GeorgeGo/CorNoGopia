@@ -240,6 +240,7 @@ body {
 	width: 100%;
 	z-index: 2;
 	position: relative;
+    color:white;
 }
 .search-top-row {
 	width: 100%;
