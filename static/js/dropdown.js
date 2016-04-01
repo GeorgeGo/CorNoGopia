@@ -11,18 +11,19 @@ $('html').on('click', function(e){
     }
 });
 
+$('.new-ingredient').click(function(){
+    expand();
+});
+
 function compress(){
     var form = $('#ingredientsForm');
-    var formCount = form.children().length;
-    var items = form.serialize().split('&').map(function(item){
-        let i = item.indexOf('=');
-        return item.slice(i+1);
-    });
+    var formCount = form.serializeArray().length;
+    var items = form.serializeArray();
     let compressValue = '';
     for (var i=0;i<items.length-1;i++){
-        compressValue += items[i]+', ';
+        compressValue += items[i].value+', ';
     }
-    compressValue += items.slice(-1)[0];
+    compressValue += items.slice(-1)[0].value;
     form.empty(); 
     var formEntry = $('<input type=\'text\' name=\'ingredient_0\' class=\'new-ingredient\' value=\''+compressValue+'\'>');
     form.append(formEntry);
@@ -32,6 +33,7 @@ function compress(){
 function expand(){
     // clicking back on the span should expand the contents into how ever many
     // items there are    
+    console.log('hi');
 }
 
 function dropdownLi(){
