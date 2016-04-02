@@ -11,7 +11,7 @@ $('html').on('click', function(e){
     }
 });
 
-$('.new-ingredient').click(function(){
+$(document).on('click','.new-ingredient',function(){
     expand();
 });
 
@@ -25,7 +25,7 @@ function compress(){
     }
     compressValue += items.slice(-1)[0].value;
     form.empty(); 
-    var formEntry = $('<input type=\'text\' name=\'ingredient_0\' class=\'new-ingredient\' value=\''+compressValue+'\'>');
+    var formEntry = $('<input type=\'text\' id=\'ingredient_0\' name=\'ingredient_0\' class=\'new-ingredient\' value=\''+compressValue+'\'>');
     form.append(formEntry);
     // compress should only be called if not clicking on dropdown or span
 }
@@ -33,7 +33,15 @@ function compress(){
 function expand(){
     // clicking back on the span should expand the contents into how ever many
     // items there are    
-    console.log('hi');
+    let firstField = $('#ingredient_0');
+    if(firstField.val().indexOf(',')!=-1){
+        let arr = firstField.val().split(',');
+        $('#ingredientsForm').empty();
+        for(let i=0;i<arr.length;i++){
+            var formEntry = $("<input type=\"text\" id=\"ingredient_"+(i-1)+"\" name=\"ingredient_"+i+"\" class=\"new-ingredient\" value=\""+arr[i].replace(/^ /g,'')+"\">");
+            $('#ingredientsForm').append(formEntry); 
+        }
+    }
 }
 
 function dropdownLi(){
@@ -47,9 +55,8 @@ function dropdownLi(){
     	var newLength = + this.id[this.id.length-1];
         $('.wrapper-dropdown .dropdown-label').text(newLength);
     	if (newLength >= previousLength) {
-    		var difference = newLength - previousLength;
-    		for (var i = 0; i < difference; i++) {
-    			var formEntry = $("<input type=\"text\" name=\"ingredient_"+i+"\" class=\"new-ingredient\">");
+    		for (var i = previousLength; i < newLength; i++) {
+    			var formEntry = $("<input type=\"text\" id=\"ingredient_"+i+"\" name=\"ingredient_"+i+"\" class=\"new-ingredient\">");
     			$('#ingredientsForm').append(formEntry);
     		}
     	} else {
