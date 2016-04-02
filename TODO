@@ -20,6 +20,7 @@ George:
 ✔ Deploy to Heroku @done(2016-03-10 14:42) @project(George)
 
 Noah:
+☐ Fix css on click for ingredient
 ☐ STYLE!
 ☐ change class names to snake case
 ☐ review naming conventions
