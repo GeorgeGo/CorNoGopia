@@ -27,12 +27,9 @@ function compress(){
     form.empty(); 
     var formEntry = $('<input type=\'text\' id=\'ingredient_0\' name=\'ingredient_0\' class=\'new-ingredient\' value=\''+compressValue+'\'>');
     form.append(formEntry);
-    // compress should only be called if not clicking on dropdown or span
 }
 
 function expand(){
-    // clicking back on the span should expand the contents into how ever many
-    // items there are    
     let firstField = $('#ingredient_0');
     if(firstField.val().indexOf(',')!=-1){
         let arr = firstField.val().split(',');
