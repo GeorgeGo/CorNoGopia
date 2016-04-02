@@ -7,8 +7,9 @@ George:
 ✔ Drop down box overlay when deselected populated search with csv @done
 (2016-03-31 16:14)
 ✔ Implement compress function @done (2016-03-31 16:14)
-☐ Test cases for when compress triggers
-✘ Let user exclude an ingredient result @cancelled (2016-03-28 14:29)
+✔ Test cases for when compress triggers @done (2016-04-01 17:32)
+☐ trigger expand on dropdown click
+☐ synchronize dropdown and number of boxes/items avaliable
 ☐ Add budgeting
 ☐ Add groceries
 ☐ Grocery Estimates
