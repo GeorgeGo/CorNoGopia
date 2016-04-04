@@ -12,6 +12,7 @@ George:
 ✔ synchronize dropdown and number of boxes/items avaliable @done (2016-04-04
 13:29)
 ✔ Check that expand and compress work with search @done (2016-04-04 13:29)
+☐ fix get recipe button click 
 ☐ style loading feature
 ☐ add loading feature for individual cards
 ☐ Add budgeting
@@ -24,7 +25,10 @@ George:
 ✔ Deploy to Heroku @done(2016-03-10 14:42) @project(George)
 
 Noah:
-☐ fix flip sizing
+✔ fix flip sizing @done (2016-04-04 14:14)
+☐ fix stylish border
+☐ on button press, border height changes from vh to nothing
+☐ separate landing from main page
 ☐ on flip lower opacity of picture
 ☐ on flip add button to go to source
 ☐ add space to add to grocery list
