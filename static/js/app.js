@@ -35,10 +35,8 @@ function Recipe(recipeObject){
                         console.log('completes');
                     },
                     success: function (response) {
-                        console.log('hello');
                         var r = JSON.parse(response);
                         self.ingredients = r['recipe']['ingredients'];
-                        console.log(that.className);
                         if (that.className === 'recipeDiv') {
                             $(that).empty();
                             var recipe_card_ingredients_list = $('<ul></ul>');
@@ -72,8 +70,6 @@ function Recipe(recipeObject){
                     var recipe_card_ingredients_list = $('<ul></ul>');
                     for (var i = 0; i < self.ingredients.length; i++) {
                         recipe_card_ingredients_list.append('<li>'+self.ingredients[i]+'</li>');
-                        console.log(self.ingredients[i]);
-                        console.log('hi');
                     }
                     $(this).css('background-image', 'none');
                     $(this).addClass('recipe-card');
@@ -104,6 +100,14 @@ function getRecipes() {
     $.post({
         url: '/getRecipes',
         data: $('#ingredientsForm').serialize(),
+        beforeSend: function(){
+            let img = $('<img src="static/images/ajax-loader.gif"/>');
+            $('#flav-town').append(img);
+        },
+        complete: function(){
+            console.log('complets');
+            $('#flav-town').empty();
+        },
         success: function(response) {
             $('#recipeDivHolder').empty();
             recipes = [];

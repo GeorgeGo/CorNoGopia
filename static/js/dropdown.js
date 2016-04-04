@@ -15,15 +15,35 @@ $(document).on('click','.new-ingredient',function(){
     expand();
 });
 
+function updateDropdownLabel(value) {
+    $('.wrapper-dropdown .dropdown-label').text(value);
+}
+
 function compress(){
     var form = $('#ingredientsForm');
     var formCount = form.serializeArray().length;
-    var items = form.serializeArray();
+    var items = [];
+    form.serializeArray().forEach(function(obj) {
+        if (obj.value.match(/^[a-z][a-z\ ,]*$/i)) {
+           items.push(obj.value.trim());
+        }
+    });
     let compressValue = '';
-    for (var i=0;i<items.length-1;i++){
-        compressValue += items[i].value+', ';
+    if (items.length > 0) {
+        for (var i=0;i<items.length-1;i++){
+            compressValue += items[i]+', ';
+        }
+        compressValue += items.slice(-1)[0];
+        let numberOfIngredients = 0;
+        items.forEach(function(str){
+            let count = str.split(',').length;
+            numberOfIngredients += count;
+        });
+        updateDropdownLabel(numberOfIngredients);
+    } else {
+        updateDropdownLabel(items.length+1);
     }
-    compressValue += items.slice(-1)[0].value;
+    compressValue = compressValue.trim();
     form.empty(); 
     var formEntry = $('<input type=\'text\' id=\'ingredient_0\' name=\'ingredient_0\' class=\'new-ingredient\' value=\''+compressValue+'\'>');
     form.append(formEntry);
@@ -31,19 +51,23 @@ function compress(){
 
 function expand(){
     let firstField = $('#ingredient_0');
-    if(firstField.val().indexOf(',')!=-1){
-        let arr = firstField.val().split(',');
-        $('#ingredientsForm').empty();
-        for(let i=0;i<arr.length;i++){
-            var formEntry = $("<input type=\"text\" id=\"ingredient_"+(i-1)+"\" name=\"ingredient_"+i+"\" class=\"new-ingredient\" value=\""+arr[i].replace(/^ /g,'')+"\">");
-            $('#ingredientsForm').append(formEntry); 
-        }
+    if (firstField.val()) {
+        if(firstField.val().indexOf(',')!=-1){
+            let arr = firstField.val().split(',');
+            $('#ingredientsForm').empty();
+            for(var i=0;i<arr.length;i++){
+                var formEntry = $("<input type=\"text\" id=\"ingredient_"+(i-1)+"\" name=\"ingredient_"+i+"\" class=\"new-ingredient\" value=\""+arr[i].replace(/^ /g,'')+"\">");
+                $('#ingredientsForm').append(formEntry); 
+            }
+            updateDropdownLabel(i);
+        }    
     }
 }
 
 function dropdownLi(){
     $('.number-li').on('click',function(e){
         $('.number-li').hide();
+        expand();
         // Lengths here should be determined by span or integrate with
         // expand/compress
         // potentially just add how ever many the user wants - 1
@@ -57,8 +81,7 @@ function dropdownLi(){
     			$('#ingredientsForm').append(formEntry);
     		}
     	} else {
-    		var difference = previousLength - newLength;
-    		for (var i = 0; i < difference; i++) {
+    		for (var i = newLength; i < previousLength; i++) {
     			$('#ingredientsForm input:last-child').remove()
     		}
     	}

@@ -8,18 +8,28 @@ George:
 (2016-03-31 16:14)
 ✔ Implement compress function @done (2016-03-31 16:14)
 ✔ Test cases for when compress triggers @done (2016-04-01 17:32)
-☐ trigger expand on dropdown click
-☐ synchronize dropdown and number of boxes/items avaliable
+✔ trigger expand on dropdown click @done (2016-04-04 10:18)
+✔ synchronize dropdown and number of boxes/items avaliable @done (2016-04-04
+13:29)
+✔ Check that expand and compress work with search @done (2016-04-04 13:29)
+☐ style loading feature
+☐ add loading feature for individual cards
 ☐ Add budgeting
 ☐ Add groceries
 ☐ Grocery Estimates
 ☐ Pull cheapest and nearest products locally and online
 ☐ Cycle through potential api calls
-☐ Add loading menu during get recipe
+✔ Add loading menu during get recipe @done (2016-04-01 19:03)
 ✔ Fix dropdown functionality @done(2016-03-10 16:14) @project(George)
 ✔ Deploy to Heroku @done(2016-03-10 14:42) @project(George)
 
 Noah:
+☐ fix flip sizing
+☐ on flip lower opacity of picture
+☐ on flip add button to go to source
+☐ add space to add to grocery list
+☐ add grocery list panel
+☐ Fix css on click for ingredient
 ☐ STYLE!
 ☐ change class names to snake case
 ☐ review naming conventions
