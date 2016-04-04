@@ -9,8 +9,9 @@ George:
 ✔ Implement compress function @done (2016-03-31 16:14)
 ✔ Test cases for when compress triggers @done (2016-04-01 17:32)
 ✔ trigger expand on dropdown click @done (2016-04-04 10:18)
-☐ synchronize dropdown and number of boxes/items avaliable
-☐ Check that expand and compress work with search
+✔ synchronize dropdown and number of boxes/items avaliable @done (2016-04-04
+13:29)
+✔ Check that expand and compress work with search @done (2016-04-04 13:29)
 ☐ style loading feature
 ☐ add loading feature for individual cards
 ☐ Add budgeting
