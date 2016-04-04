@@ -25,7 +25,7 @@ def getRecipes():
             return (json.dumps(r.json()), 200)
     # except Rate limit exceeded, change index and rerun
     except Exception as e:
-        return (json.dumps({'error': str(e)}), 400)
+        return (json.dumps(str(e)), 400)
 
 
 @app.route('/getIngredients', methods=['POST'])
