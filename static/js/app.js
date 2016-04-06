@@ -123,7 +123,7 @@ function getRecipes() {
     });
 }
 
-$('#getRecipes span').click(function () {
+$('#getRecipes').click(function () {
     $('#ingredientsForm').submit();
 });
 
