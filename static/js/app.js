@@ -29,10 +29,11 @@ function Recipe(recipeObject){
                     url: '/getIngredients',
                     data: {'rId': self.recipe_id},
                     beforeSend: function () {
-                        console.log("before");
+                        let img = $('<img src="static/images/ajax-loader.gif"/>');
+                        $('#flav-town').append(img);
                     },
                     complete: function () {
-                        console.log('completes');
+                        $('#flav-town').empty();
                     },
                     success: function (response) {
                         var r = JSON.parse(response);
@@ -105,7 +106,6 @@ function getRecipes() {
             $('#flav-town').append(img);
         },
         complete: function(){
-            console.log('complets');
             $('#flav-town').empty();
         },
         success: function(response) {
