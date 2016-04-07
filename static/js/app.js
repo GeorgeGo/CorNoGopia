@@ -118,7 +118,7 @@ function getRecipes() {
             }
         },
         error: function(error) {
-            alert('There was an error with recipe retrieval\nCode: '+error);
+            alert(`There was an error with recipe retrieval\nStatus: ${error.status}\nResponse: ${error.responseText}`);
         }
     });
 }
