@@ -2,7 +2,7 @@ recipes = []
 // Recipe Object
 function Recipe(recipeObject) {
 	this.publisher = recipeObject['publisher'];
-	this.title = recipeObject['title'];
+	this.title = s.unescapeHTML(recipeObject['title']);
 	this.social_rank = recipeObject['social_rank'];
 	this.f2f_url = recipeObject['f2f_url'];
 	this.publisher_url = recipeObject['publisher_url'];
