@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}" media="screen" charset="utf-8">
+    	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" media="screen" charset="utf-8">
+    	<link rel="stylesheet" href="{{ url_for('static', filename='css/module.css') }}" media="screen" charset="utf-8">
+    	<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    	<title>Cornucopia</title>
+    </head>
+    <body>
+        <div class="landing-container">
+    		<div class="title-container">
+    			<div class="landing-title-background"></div>
+    			<div class="landing-title">CORNUCOPIA</div>
+    		</div>
+            <div class="enter-button">ENTER</div>
+    	</div>
+        <script type="text/javascript" src="{{ url_for('static', filename='vendors/jquery-2.2.0.min.js') }}"></script>
+    	<script type="text/javascript" src="{{ url_for('static', filename='vendors/modernizr.custom.79639.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/landing.js') }}"></script>
+    </body>
+</html>

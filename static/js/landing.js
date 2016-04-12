@@ -1,15 +1,9 @@
-function landing(){
-    $('.main-container').hide()
-
-}
 function enterMain(){
     $('.enter-button').on('click',function(e){
-        $('.landing-container').hide();
-        $('.main-container').fadeIn( "slow" );
+        window.location = '/main'
     })
 }
 function enterHover(){
-
 	$('.enter-button').on('mouseover',function(e){
     	$('.enter-button').css('background-color', "rgba(236, 142, 88, 0.85");
     })
@@ -19,10 +13,5 @@ function enterHover(){
 }
 
 
-
-
-
-
 enterHover();
-landing();
 enterMain();

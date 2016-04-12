@@ -26,6 +26,10 @@ def checkKey(query):
         return r
 
 @app.route('/')
+def landing():
+    return render_template('landing.html')
+
+@app.route('/main')
 def main():
     return render_template('index.html')
 
