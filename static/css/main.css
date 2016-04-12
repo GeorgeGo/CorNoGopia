@@ -101,7 +101,7 @@ body {
 	height: 100vh;
 }
 .flav-town-holder {
-	height: 400px;
+	height: 200px;
 	width: 100%;
 	background-color: grey;
 	position: relative;
@@ -127,7 +127,7 @@ body {
 }
 .search-area {
 	width: 100%;
-	height: 50%;
+	height: 20%;
 	z-index: 2;
 	position: relative;
 }
@@ -140,36 +140,72 @@ body {
 .filler-container{
 	clear: left;
 	width: 100%;
-	height: 100vh;
-	background-color: red
+	height: 40%;
+	background-color: #dcdcdc;
+	position: relative;
 }
 .filler-content{
-	width:80%;
-	height: 100%;
-	margin-left: 10%;
-	margin-right:10%;
-	background-color: blue;
-	text-align: center;
+	position: absolute;
+	bottom: 10%;
+	width:90%;
+	height: 80%;
+	margin-left: 5%;
+	margin-right:5%;
+	background-color: #dcdcdc;
+	/*text-align: center;*/
 }
 .filler-one{
-	width:30%;
+	width:25%;
 	height:100%;
-	display:inline-block;
-	background-color: purple;
+	float: left;
+	margin-left: 6.25%;
+	/*background-color: purple;*/
+	/*background-image: url('../images/cooking.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	/*opacity: 0.3;*/
+	position: relative;
+
 }
 .filler-two{
-	width:30%;
+	width:25%;
 	height:100%;
-	display:inline-block;
-	background-color: purple;
+	float: left;
+	margin-left: 6.25%;
+	/*background-color: purple;*/
+	/*background-image: url('../images/cooking.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	/*opacity: 0.3;*/
+	position: relative;
 }
 .filler-three{
-	width:30%;
+	width:25%;
 	height:100%;
-	display:inline-block;
-	background-color: purple;
-}
+	float: left;
+	margin-left: 6.25%;
+	/*background-color: purple;*/
+	/*background-image: url('../images/cooking.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	/*opacity: 0.3;*/
+	position: relative;
 
+}
+.cooking-pic{
+	width: 100%;
+	/*height:100%;*/
+	background-image: url('../images/cooking.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.7;
+
+}
+.info-text{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 .ingredient-holder {
 	width: 80%;
 	margin-left: 10%;
