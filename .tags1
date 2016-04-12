@@ -4,16 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Recipe	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function Recipe(recipeObject) {$/;"	function	line:3
-get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_div = function() {$/;"	function	line:14
-this.get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_div = function() {$/;"	method	line:14
-flipper	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^			function flipper() {$/;"	function	line:26
-beforeSend	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						beforeSend: function() {$/;"	function	line:68
-complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						complete: function() {$/;"	function	line:78
-success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						success: function(response) {$/;"	function	line:81
-error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						error: function(error) {$/;"	function	line:86
-getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:99
-complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^		complete: function() {$/;"	function	line:103
-success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^		success: function(response) {$/;"	function	line:108
-error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^		error: function(error) {$/;"	function	line:117
-getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:99
