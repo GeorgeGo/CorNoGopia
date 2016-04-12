@@ -4,17 +4,20 @@ George:
 ✔ add 404 page @done(2016-04-12 11:56)
 ☐ Add grocery lists
 ✔ Clean titles for unicode characters @done(2016-04-12 11:38)
-☐ Add source button
+✔ Add source button @done(2016-04-12 14:14)
 ☐ Add save recipe button
 ☐ Incorporate USDA api
 
 Noah:
 ☐ Add fade to main
+☐ Fix footer so that it doesn't block titles of last element
 ☐ Fix button spans
 ☐ Improve header
 ☐ Remove bottom bar
 ☐ Style card title
 ☐ Style ingredient output
+☐ Top 2 lines of top row of cards don't work on click: Noah suspects grocerylist
+
 
 V2:
 George:
