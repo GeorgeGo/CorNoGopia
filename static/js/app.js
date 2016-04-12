@@ -115,7 +115,6 @@ function getRecipes() {
 			$("body, html").animate({
 				scrollTop: $('#recipeDivHolder').offset().top
 			}, 600);
-			console.log('here');
 		},
 		success: function(response) {
 			$('#recipeDivHolder').empty();
