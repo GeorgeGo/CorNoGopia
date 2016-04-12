@@ -30,9 +30,9 @@ George:
 
 Noah:
 ✔ fix flip sizing @done (2016-04-04 14:14)
-☐ fix stylish border
-☐ on button press, border height changes from vh to nothing
-☐ separate landing from main page
+✔ fix stylish border @done(2016-04-12 10:51)
+✔ on button press, border height changes from vh to nothing @done(2016-04-12 10:51)
+✔ separate landing from main page @done(2016-04-12 10:51)
 ☐ on flip lower opacity of picture
 ☐ on flip add button to go to source
 ☐ add space to add to grocery list
@@ -41,7 +41,7 @@ Noah:
 ☐ STYLE!
 ☐ change class names to snake case
 ☐ review naming conventions
-☐ Fix dropdown and ingredients output z order
+✔ Fix dropdown and ingredients output z order @done(2016-04-12 10:51)
 ✔ Fix drop down menu @done(2016-03-10 15:53) @project(Noah)
 
 
