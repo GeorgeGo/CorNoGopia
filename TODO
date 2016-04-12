@@ -2,8 +2,7 @@ V3:
 George:
 ☐ Add grocery lists
 ☐ Add user accounts
-☐ Clean titles for unicode characters
-☐ Make titles Capitalized
+✔ Clean titles for unicode characters @done(2016-04-12 11:38)
 ☐ Add source button
 ☐ Add save recipe button
 ☐ Incorporate USDA api
