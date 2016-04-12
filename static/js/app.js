@@ -54,12 +54,12 @@ function Recipe(recipeObject) {
 					},
 					beforeSend: function() {
 						let img = $('<img src="static/images/ajax-loader.gif"/>');
-						img.css('position', 'absolute');
-						img.css('margin-left', '50%');
-						img.css('left', '-50px');
-						img.css('margin-top', '150px');
-						img.css('width', '100px');
-						img.css('height', '100px');
+						img.css({'position': 'absolute',
+							'margin-left': '50%',
+							'left': '-50px',
+							'margin-top': '150px',
+							'width': '100px',
+							'height': '100px'});
 						$(that).append(img);
 					},
 					complete: function() {
