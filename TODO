@@ -2,16 +2,25 @@ V3:
 George:
 ☐ Add grocery lists
 ☐ Add user accounts
+☐ Clean titles for unicode characters
+☐ Make titles Capitalized
+☐ Add source button
+☐ Add save recipe button
+☐ Incorporate USDA api
 
 Noah:
-
+☐ Add fade to main
+☐ Fix button spans
+☐ Improve header
+☐ Remove bottom bar
+☐ Style card title
+☐ Style ingredient output
 
 V2:
 George:
 ✔ Identify api @done (2016-03-28 14:28)
 ✔ Implement new api with title, image, source, ingredients @done (2016-03-28
 14:28)
-☐ Incorporate USDA api
 ✔ Drop down box overlay when deselected populated search with csv @done
 (2016-03-31 16:14)
 ✔ Implement compress function @done (2016-03-31 16:14)
@@ -75,3 +84,8 @@ Proper:
 ✔ Convert post output to objects for use when switching @done(2016-03-03 11:23) @project(George)
 ✔ Check on what clicks will trigger a search @done(2016-03-02 12:20) @project(George)
 ✔ on change remove empty fields then cut ending stuff @done(2016-03-06 17:02) @project(George)
+
+
+
+V4:
+☐ Sticky header/footer
