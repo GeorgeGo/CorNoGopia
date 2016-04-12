@@ -6,6 +6,8 @@ function enterMain(){
     $('.enter-button').on('click',function(e){
         $('.landing-container').hide();
         $('.main-container').fadeIn( "slow" );
+        $('.main-background').fadeIn( "slow" );
+
     })
 }
 function enterHover(){

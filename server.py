@@ -6,7 +6,7 @@ app = Flask(__name__)
 keys = ['373a612eeeae2813e001680f04b585db',
         '5dbe8dc691de2b3d8db331019416a9e5']
 
-current_key_id = 0
+current_key_id = 1
 
 
 @app.route('/')

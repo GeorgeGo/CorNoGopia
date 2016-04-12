@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../static/css/reset.css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="../static/css/main.css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="../static/css/module.css" media="screen" title="no title" charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<title>Cornucopia</title>
 </head>
 
@@ -21,35 +22,52 @@
 	</div>
 	<div class="main-background">
 		<div class="main-container">
-			<h1 class="main-header">Cornucopia</h1>
-			<div class="flav-town-holder">
-				<div class="flav-town" id="flav-town">
-					<p class='flav-town-text'>
-
-					</p>
-				</div>
-			</div>
-			<div class="search-area">
-				<div class="search-top-row">
-					<div id="dd" class="wrapper-dropdown" tabindex="1">
-						<span class="dropdown-label">1</span>
-						<ul class="number-ul">
-							<li class="number-li" id="number-li-1"><a class="number-li-link" href="#">1</a></li>
-							<li class="number-li" id="number-li-2"><a class="number-li-link" href="#">2</a></li>
-							<li class="number-li" id="number-li-3"><a class="number-li-link" href="#">3</a></li>
-							<li class="number-li" id="number-li-4"><a class="number-li-link" href="#">4</a></li>
-							<li class="number-li" id="number-li-5"><a class="number-li-link" href="#">5</a></li>
-						</ul>
+			<div class="title-search">
+				<div class="flav-town-holder">
+					<div class="flav-town" id="flav-town">
+						<div class="flav-town-title">
+							<h1 class="main-header">Cornucopia</h1>
+							<p class='sub-header'>
+								It's Food, Stupid
+							</p>
+						</div>
 					</div>
-					<form id="ingredientsForm" class='ingredient-form'>
-						<input type="text" name="ingredient_0" id="ingredient_0" class="new-ingredient">
-					</form>
-					<div id='getRecipes' class="output-button"><span>GET RECIPE</span></div>
+				</div>
+				<div class="search-area">
+					<div class="search-top-row">
+						<div id="dd" class="wrapper-dropdown" tabindex="1">
+							<span class="dropdown-label">1</span>
+							<ul class="number-ul">
+								<li class="number-li" id="number-li-1"><a class="number-li-link" href="#">1</a></li>
+								<li class="number-li" id="number-li-2"><a class="number-li-link" href="#">2</a></li>
+								<li class="number-li" id="number-li-3"><a class="number-li-link" href="#">3</a></li>
+								<li class="number-li" id="number-li-4"><a class="number-li-link" href="#">4</a></li>
+								<li class="number-li" id="number-li-5"><a class="number-li-link" href="#">5</a></li>
+							</ul>
+						</div>
+						<form id="ingredientsForm" class='ingredient-form'>
+							<input type="text" name="ingredient_0" id="ingredient_0" class="new-ingredient">
+						</form>
+						<div id='getRecipes' class="output-button" href="recipeDivHolder"><span class="output-button-label">GET RECIPE</span></div>
+					</div>
+				</div>
+			</div>
+			<div id="recipeDivHolder" class=""></div>
+			<!-- <div class="filler-container">
+				<div class="filler-content">
+					<div class="filler-one">
+
+					</div>
+					<div class="filler-two">
+
+					</div>
+					<div class="filler-three">
+
+					</div>
 				</div>
 
-			</div>
+			</div> -->
 
-			<div id="recipeDivHolder" class=""></div>
 		</div>
 	</div>
 
