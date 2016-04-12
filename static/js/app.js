@@ -41,6 +41,12 @@ function Recipe(recipeObject) {
 						window.open(self.source_url);
 					});
 					$(that).append(sourceBtn);
+					var saveBtn = $('<div>Save Recipe</div>');
+					saveBtn.addClass('save-btn');
+					saveBtn.click(function () {
+
+					});
+					$(that).append(saveBtn);
 				} else if (that.className === 'recipe-card') {
 					$(that).empty();
 					$(that).addClass('recipeDiv');
@@ -51,8 +57,8 @@ function Recipe(recipeObject) {
 					$(that).append(recipeNameDiv);
 					$(that).css('background-image', "url(" + self.image_url + ")");
 				}
-			}	
-			if(e.target.className !== 'source-btn') {
+			}
+			if(e.target.className !== 'source-btn' || e.target.className !== 'save-btn') {
 				if (self.ingredients == 0) {
 					$.post({
 						url: '/getIngredients',
