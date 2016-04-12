@@ -1,5 +1,4 @@
 recipes = []
-
 // Recipe Object
 function Recipe(recipeObject){
     this.publisher = recipeObject['publisher'];
@@ -62,7 +61,7 @@ function Recipe(recipeObject){
                         }
                     },
                     error: function (error) {
-                        alert('There was an error with ingredients retrieval\nCode: '+error);
+                        alert(`There was an error with ingredients retrieval\nStatus: ${error.status}\nResponse: ${error.responseText}`);
                     }
                 });
             }else{
