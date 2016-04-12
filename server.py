@@ -55,6 +55,10 @@ def getIngredients():
     except Exception as e:
         return (json.dumps(str(e)), 400)
 
+@app.errorhandler(404)
+def pageNotFound(e):
+    return render_template('404.html'),404
+
 if __name__ == '__main__':
     # app.run(host='0.0.0.0', port=5000, debug=False)
     app.run(port=5000, debug=True)

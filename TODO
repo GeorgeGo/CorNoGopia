@@ -1,9 +1,23 @@
 V3:
 George:
-☐ Add grocery lists
 ☐ Add user accounts
+✔ add 404 page @done(2016-04-12 11:56)
+☐ Add grocery lists
+✔ Clean titles for unicode characters @done(2016-04-12 11:38)
+✔ Add source button @done(2016-04-12 14:14)
+✔ Add save recipe button @done(2016-04-12 14:20)
+☐ Add save recipe functionality
+☐ Incorporate USDA api
 
 Noah:
+☐ Add fade to main
+☐ Fix footer so that it doesn't block titles of last element
+☐ Fix button spans
+☐ Improve header
+☐ Remove bottom bar
+☐ Style card title
+☐ Style ingredient output
+☐ Top 2 lines of top row of cards don't work on click: Noah suspects grocerylist
 
 
 V2:
@@ -11,7 +25,6 @@ George:
 ✔ Identify api @done (2016-03-28 14:28)
 ✔ Implement new api with title, image, source, ingredients @done (2016-03-28
 14:28)
-☐ Incorporate USDA api
 ✔ Drop down box overlay when deselected populated search with csv @done
 (2016-03-31 16:14)
 ✔ Implement compress function @done (2016-03-31 16:14)
@@ -75,3 +88,8 @@ Proper:
 ✔ Convert post output to objects for use when switching @done(2016-03-03 11:23) @project(George)
 ✔ Check on what clicks will trigger a search @done(2016-03-02 12:20) @project(George)
 ✔ on change remove empty fields then cut ending stuff @done(2016-03-06 17:02) @project(George)
+
+
+
+V4:
+☐ Sticky header/footer

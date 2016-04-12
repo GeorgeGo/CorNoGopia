@@ -2,7 +2,7 @@ recipes = []
 // Recipe Object
 function Recipe(recipeObject) {
 	this.publisher = recipeObject['publisher'];
-	this.title = recipeObject['title'];
+	this.title = s.unescapeHTML(recipeObject['title']);
 	this.social_rank = recipeObject['social_rank'];
 	this.f2f_url = recipeObject['f2f_url'];
 	this.publisher_url = recipeObject['publisher_url'];
@@ -21,85 +21,74 @@ function Recipe(recipeObject) {
 		recipeNameDiv.addClass('recipeNameDiv');
 		recipeNameDiv.text(this.title);
 		div.append(recipeNameDiv);
-		div.click(function(event) {
+		div.click(function(e) {
 			var that = this;
-			if (self.ingredients == 0) {
-				$.post({
-					url: '/getIngredients',
-					data: {
-						'rId': self.recipe_id
-					},
-					beforeSend: function() {
-						let img = $('<img src="static/images/ajax-loader.gif"/>');
-						img.css('position', 'absolute');
-						img.css('margin-left', '50%');
-						img.css('left', '-50px');
-						img.css('margin-top', '150px');
-						img.css('width', '100px');
-						img.css('height', '100px');
-						$(that).append(img);
-					},
-					complete: function() {
-						$(that).children('img').remove();
-
-					},
-					success: function(response) {
-						var r = JSON.parse(response);
-						self.ingredients = r['recipe']['ingredients'];
-						if (that.className === 'recipeDiv') {
-							$(that).empty();
-							var recipe_card_ingredients_list = $('<ul></ul>');
-							for (var i = 0; i < self.ingredients.length; i++) {
-								recipe_card_ingredients_list.append('<li>' + self.ingredients[i] + '</li>');
-							}
-							$(that).css('background-image', 'none');
-							$(that).addClass('recipe-card');
-							$(that).removeClass('recipeDiv');
-							recipe_card_ingredients_list.addClass('ingredient-card-list');
-							$(that).append(recipe_card_ingredients_list);
-
-						} else if (that.className === 'recipe-card') {
-							$(that).empty();
-							$(that).css('backgroundRepeat', "no-repeat");
-							var recipeNameDiv = $('<div></div>');
-							recipeNameDiv.addClass('recipeNameDiv');
-							$(that).append(recipeNameDiv);
-							$(':nth-child(2)', that).text(self.title);
-							$(that).css('background-image', "url(" + self.image_url + ")");
-							$(that).addClass('recipeDiv');
-							$(that).removeClass('recipe-card');
-
-						}
-					},
-					error: function(error) {
-						alert(`There was an error with ingredients retrieval\nStatus: ${error.status}\nResponse: ${error.responseText}`);
-					}
-				});
-			} else {
-				if (this.className === 'recipeDiv') {
-					$(this).empty();
+			function flipper() {
+				if (that.className === 'recipeDiv') {
+					$(that).empty();
+					$(that).addClass('recipe-card');
+					$(that).removeClass('recipeDiv');
 					var recipe_card_ingredients_list = $('<ul></ul>');
 					for (var i = 0; i < self.ingredients.length; i++) {
 						recipe_card_ingredients_list.append('<li>' + self.ingredients[i] + '</li>');
 					}
-					$(this).css('background-image', 'none');
-					$(this).addClass('recipe-card');
-					$(this).removeClass('recipeDiv');
+					$(that).css('background-image', 'none');
 					recipe_card_ingredients_list.addClass('ingredient-card-list');
-					$(this).append(recipe_card_ingredients_list);
-				} else if (this.className === 'recipe-card') {
-					$(this).empty();
-					var recipeNameDiv = $('<div></div>');
+					$(that).append(recipe_card_ingredients_list);
+					var sourceBtn = $('<div>Go to Source</div>');
+					sourceBtn.addClass('source-btn');
+					sourceBtn.click(function () {
+						window.open(self.source_url);
+					});
+					$(that).append(sourceBtn);
+					var saveBtn = $('<div>Save Recipe</div>');
+					saveBtn.addClass('save-btn');
+					saveBtn.click(function () {
+
+					});
+					$(that).append(saveBtn);
+				} else if (that.className === 'recipe-card') {
+					$(that).empty();
+					$(that).addClass('recipeDiv');
+					$(that).removeClass('recipe-card');
+					$(that).css('backgroundRepeat', "no-repeat");
+					var recipeNameDiv = $('<div>'+self.title+'</div>');
 					recipeNameDiv.addClass('recipeNameDiv');
-					recipeNameDiv.text(self.title);
-					$(this).append(recipeNameDiv);
-					$(this).css('backgroundRepeat', "no-repeat");
-					var recipeNameDiv = $('<div></div>');
-					recipeNameDiv.addClass('recipeNameDiv');
-					// recipeNameDiv.text(this.title);
-					$(this).css('background-image', "url(" + self.image_url + ")");
-					$(this).addClass('recipeDiv');
-					$(this).removeClass('recipe-card');
+					$(that).append(recipeNameDiv);
+					$(that).css('background-image', "url(" + self.image_url + ")");
+				}
+			}
+			if(e.target.className !== 'source-btn' || e.target.className !== 'save-btn') {
+				if (self.ingredients == 0) {
+					$.post({
+						url: '/getIngredients',
+						data: {
+							'rId': self.recipe_id
+						},
+						beforeSend: function() {
+							let img = $('<img src="static/images/ajax-loader.gif"/>');
+							img.css({'position': 'absolute',
+								'margin-left': '50%',
+								'left': '-50px',
+								'margin-top': '150px',
+								'width': '100px',
+								'height': '100px'});
+							$(that).append(img);
+						},
+						complete: function() {
+							$(that).children('img').remove();
+						},
+						success: function(response) {
+							var r = JSON.parse(response);
+							self.ingredients = r['recipe']['ingredients'];
+							flipper();
+						},
+						error: function(error) {
+							alert(`There was an error with ingredients retrieval\nStatus: ${error.status}\nResponse: ${error.responseText}`);
+						}
+					});
+				} else {
+					flipper();
 				}
 			}
 		});
@@ -115,7 +104,6 @@ function getRecipes() {
 			$("body, html").animate({
 				scrollTop: $('#recipeDivHolder').offset().top
 			}, 600);
-			console.log('here');
 		},
 		success: function(response) {
 			$('#recipeDivHolder').empty();
