@@ -58,7 +58,7 @@ function Recipe(recipeObject) {
 					$(that).css('background-image', "url(" + self.image_url + ")");
 				}
 			}
-			if(e.target.className !== 'source-btn' || e.target.className !== 'save-btn') {
+			if(e.target.className !== 'save-btn' && e.target.className !== 'source-btn') {
 				if (self.ingredients == 0) {
 					$.post({
 						url: '/getIngredients',
