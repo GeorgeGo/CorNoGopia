@@ -1,4 +1,21 @@
 V3:
+<<<<<<< 239af62d7d0682c909bda1911eeee7370225fd9d
+=======
+George:
+☐ Add user accounts
+✔ Add login and signup buttons @done(2016-04-12 17:31)
+☐ Add ability to create an account through signup
+☐ Add ability to login to account
+☐ Store account details (user,pass,saved recipes)
+✔ add 404 page @done(2016-04-12 11:56)
+☐ Add grocery lists
+✔ Clean titles for unicode characters @done(2016-04-12 11:38)
+✔ Add source button @done(2016-04-12 14:14)
+✔ Add save recipe button @done(2016-04-12 14:20)
+☐ Add save recipe functionality
+☐ Incorporate USDA api
+
+>>>>>>> docs: dupated todos
 Noah:
 ☐ Add fade to main
 ☐ Fix footer so that it doesn't block titles of last element
