@@ -127,6 +127,71 @@
   	position: relative;
       color:white;
   }
+/*Recipe Cards*/
+.recipeDivHolder{
+	background-color: #dcdcdc;
+	clear: left;
+	width: 100%;
+	margin-bottom: 2%;
+}
+#recipeDivHolder{
+	background-color: #dcdcdc;
+	clear: left;
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+
+}
+  .recipeDiv {
+  	width: 96%;
+  	height: 400px;
+  	margin-left: 2%;
+  	margin-bottom: 1%;
+  	background-size: cover;
+  	background-position: center;
+  	position: relative;
+  	display: inline-block;
+  	z-index: 1;
+  }
+  .recipeNameDiv {
+  	font-family: serif;
+  	font-size: 20px;
+  	background-color: white;
+  	position: absolute;
+  	bottom: 2px;
+  	left: 2px;
+  }
+  .recipe-card {
+  	width: 96%;
+  	height: 400px;
+  	margin-left: 2%;
+  	margin-bottom: 1%;
+  	background-color: blue;
+  	background-size: cover;
+  	background-position: center;
+  	position: relative;
+  	display: inline-block;
+  	z-index: 1;
+  }
+  .recipe-name-card {
+  	font-family: serif;
+  	font-size: 20px;
+  	background-color: white;
+  	position: absolute;
+  	display: none;
+  	bottom: 2px;
+  	left: 2px;
+  }
+  .ingredient-card-list {
+  	font-family: serif;
+  	font-size: 20px;
+  	background-color: white;
+  	position: absolute;
+  	top: 2px;
+  	left: 2px;
+  }
+
 }
 @media (max-width: 900px) and (min-width: 601px) {
     /*landing*/

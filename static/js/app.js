@@ -104,6 +104,9 @@ function getRecipes() {
 			$("body, html").animate({
 				scrollTop: $('#recipeDivHolder').offset().top
 			}, 600);
+			$('.to-top-button').css({
+				'display':'block'
+			});
 		},
 		success: function(response) {
 			$('#recipeDivHolder').empty();
@@ -135,3 +138,8 @@ $('#ingredientsForm').submit(function(event) {
 	getRecipes();
 	event.preventDefault();
 });
+$('.to-top-button').click(function(){
+	$("body, html").animate({
+		scrollTop: $('.page-one').offset().top
+	}, 600);
+})
