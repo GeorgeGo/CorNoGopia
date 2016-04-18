@@ -36,7 +36,7 @@
   	height: 30px;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 780px;
+  	width: 240px;
 
   }
   .ingredient-form {
@@ -55,7 +55,7 @@
   	float: left;
   	height: 100%;
   	background-color: green;
-  	font-size: 150%;
+  	font-size: 75%;
   	padding: 0 0 0 0;
   	border: 2px solid #EC8E58;
   	z-index: 2;
@@ -108,6 +108,24 @@
   	width: 30px;
   	overflow: hidden;
   	text-align: center;
+  }
+  .number-ul {
+  	width: 100%;
+  }
+  .number-li {
+  	display: none;
+  	height: 30px;
+  	line-height: 30px;
+  	width: 100%;
+  }
+  .number-li-link {
+  	display: block;
+  	background-color: #dcdcdc;
+  	text-decoration: none;
+  	width: 100%;
+  	z-index: 2;
+  	position: relative;
+      color:white;
   }
 }
 @media (max-width: 900px) and (min-width: 601px) {
@@ -219,6 +237,24 @@
   	overflow: hidden;
   	text-align: center;
   }
+  .number-ul {
+  	width: 100%;
+  }
+  .number-li {
+  	display: none;
+  	height: 60px;
+  	line-height: 60px;
+  	width: 100%;
+  }
+  .number-li-link {
+  	display: block;
+  	background-color: #dcdcdc;
+  	text-decoration: none;
+  	width: 100%;
+  	z-index: 2;
+  	position: relative;
+      color:white;
+  }
 }
 @media (max-width: 1300px) and (min-width: 901px) {
     /*landing*/
@@ -277,3 +313,16 @@
 	line-height: 1vh;
   }
 }*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
