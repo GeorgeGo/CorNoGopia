@@ -134,6 +134,7 @@ $('#ingredientsForm').keypress(function(event) {
 	}
 });
 
+console.log('hi');
 $('#ingredientsForm').submit(function(event) {
 	getRecipes();
 	event.preventDefault();
@@ -142,4 +143,14 @@ $('.to-top-button').click(function(){
 	$("body, html").animate({
 		scrollTop: $('.page-one').offset().top
 	}, 600);
-})
+	$('.to-top-button').css({
+		'display':'none'
+	});
+});
+	$(window).scroll(function(){
+		$('.to-top-button').css({
+			'display':'block'
+		})
+		console.log('ohshit');
+	});
+	console.log('ohshit2');
