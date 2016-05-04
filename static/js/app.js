@@ -132,6 +132,7 @@ $('#ingredientsForm').keypress(function(event) {
 });
 
 $('#ingredientsForm').submit(function(event) {
+	compress();
 	getRecipes();
 	event.preventDefault();
 });
