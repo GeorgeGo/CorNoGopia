@@ -44,7 +44,7 @@ function compress(){
         updateDropdownLabel(items.length+1);
     }
     compressValue = compressValue.trim();
-    form.empty(); 
+    form.empty();
     var formEntry = $('<input type=\'text\' id=\'ingredient_0\' name=\'ingredient_0\' class=\'new-ingredient\' value=\''+compressValue+'\'>');
     form.append(formEntry);
 }
@@ -57,10 +57,10 @@ function expand(){
             $('#ingredientsForm').empty();
             for(var i=0;i<arr.length;i++){
                 var formEntry = $("<input type=\"text\" id=\"ingredient_"+(i-1)+"\" name=\"ingredient_"+i+"\" class=\"new-ingredient\" value=\""+arr[i].replace(/^ /g,'')+"\">");
-                $('#ingredientsForm').append(formEntry); 
+                $('#ingredientsForm').append(formEntry);
             }
             updateDropdownLabel(i);
-        }    
+        }
     }
 }
 

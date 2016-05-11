@@ -54,10 +54,8 @@
   	position: relative;
   	float: left;
   	height: 100%;
-  	background-color: green;
   	font-size: 75%;
   	padding: 0 0 0 0;
-  	border: 2px solid #EC8E58;
   	z-index: 2;
   	box-sizing: border-box;
   	-moz-box-sizing: border-box;
@@ -75,7 +73,7 @@
     box-shadow: 0 0 5px 1px #969696;
   }
   .output-button {
-  	float: left;
+  	float: right;
   	display: inline-block;
   	text-align: center;
   	line-height: normal;
@@ -231,11 +229,11 @@
   	height: 60px;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 780px;
+  	width: 630px;
 
   }
   .ingredient-form {
-  	width: 150px;
+  	width: 450px;
   	display: inline-block;
   	margin-right: auto;
   	float: left;
@@ -249,10 +247,8 @@
   	position: relative;
   	float: left;
   	height: 100%;
-  	background-color: purple;
   	font-size: 150%;
   	padding: 0 0 0 0;
-  	border: 2px solid #EC8E58;
   	z-index: 2;
   	box-sizing: border-box;
   	-moz-box-sizing: border-box;
@@ -270,11 +266,11 @@
     box-shadow: 0 0 5px 1px #969696;
   }
   .output-button {
-  	float: left;
+  	float: right;
   	display: inline-block;
   	text-align: center;
   	line-height: normal;
-  	margin-left: 150px;
+  	margin-left: 450px;
   	width: 120px;
 
   	background-color: #EC8E58;
@@ -313,13 +309,78 @@
   }
   .number-li-link {
   	display: block;
-  	background-color: #dcdcdc;
+  	background-color: #EC8E58;
   	text-decoration: none;
   	width: 100%;
   	z-index: 2;
   	position: relative;
       color:white;
   }
+  /*Recipe Cards*/
+  .recipeDivHolder{
+  	background-color: #dcdcdc;
+  	clear: left;
+  	width: 100%;
+  	margin-bottom: 2%;
+  }
+  #recipeDivHolder{
+  	background-color: #dcdcdc;
+  	clear: left;
+  	width: 100%;
+  	margin-left: 0%;
+  	margin-right: 0%;
+  	margin-bottom: 30px;
+
+  }
+    .recipeDiv {
+    	width: 96%;
+    	height: 400px;
+    	margin-left: 2%;
+    	margin-bottom: 1%;
+    	background-size: cover;
+    	background-position: center;
+    	position: relative;
+    	display: inline-block;
+    	z-index: 1;
+    }
+    .recipeNameDiv {
+    	font-family: serif;
+    	font-size: 20px;
+    	background-color: white;
+    	position: absolute;
+    	bottom: 2px;
+    	left: 2px;
+    }
+    .recipe-card {
+    	width: 96%;
+    	height: 400px;
+    	margin-left: 2%;
+    	margin-bottom: 1%;
+    	background-color: blue;
+    	background-size: cover;
+    	background-position: center;
+    	position: relative;
+    	display: inline-block;
+    	z-index: 1;
+    }
+    .recipe-name-card {
+    	font-family: serif;
+    	font-size: 20px;
+    	background-color: white;
+    	position: absolute;
+    	display: none;
+    	bottom: 2px;
+    	left: 2px;
+    }
+    .ingredient-card-list {
+    	font-family: serif;
+    	font-size: 20px;
+    	background-color: white;
+    	position: absolute;
+    	top: 2px;
+    	left: 2px;
+    }
+
 }
 @media (max-width: 1300px) and (min-width: 901px) {
     /*landing*/
@@ -353,10 +414,8 @@
   	position: relative;
   	float: left;
   	height: 100%;
-  	background-color: blue;
   	font-size: 150%;
   	padding: 0 0 0 0;
-  	border: 2px solid #EC8E58;
   	z-index: 2;
   	box-sizing: border-box;
   	-moz-box-sizing: border-box;
