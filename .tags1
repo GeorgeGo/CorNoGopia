@@ -4,24 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-RecipeArray	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function RecipeArray() {$/;"	function	line:1
-init	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.init = function (r) {$/;"	function	line:3
-RecipeArray.init	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.init = function (r) {$/;"	method	line:3
-output_recipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.output_recipes = function () {$/;"	function	line:8
-RecipeArray.output_recipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.output_recipes = function () {$/;"	method	line:8
-RecipeArray	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function RecipeArray() {$/;"	class	line:1
-Recipe	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function Recipe(recipeObject) {$/;"	function	line:16
-flipper	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.flipper = function () {$/;"	function	line:27
-Recipe.flipper	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.flipper = function () {$/;"	method	line:27
-get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_div = function() {$/;"	function	line:58
-Recipe.get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_div = function() {$/;"	method	line:58
-beforeSend	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						beforeSend: function() {$/;"	function	line:77
-complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						complete: function() {$/;"	function	line:88
-success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						success: function(response) {$/;"	function	line:91
-error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^						error: function(error) {$/;"	function	line:96
-Recipe	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function Recipe(recipeObject) {$/;"	class	line:16
-getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:109
-complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^		complete: function() {$/;"	function	line:113
-success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^		success: function(response) {$/;"	function	line:121
-error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^		error: function(error) {$/;"	function	line:129
-getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:109
+express	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var express = require('express'),$/;"	variable	line:1
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^function checkKey(query, cb) {$/;"	function	line:17
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^function checkKey(query, cb) {$/;"	function	line:17
+templates_dir	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var templates_dir = __dirname+'\/templates\/';$/;"	variable	line:27
+static_dir	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var static_dir = __dirname+'\/static\/';$/;"	variable	line:28
+app	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var app = express();$/;"	variable	line:30
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^    checkKey('http:\/\/food2fork.com\/api\/search?q='+food,function (response) {$/;"	function	line:45
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^    checkKey('http:\/\/food2fork.com\/api\/get?rId='+id, function (response) {$/;"	function	line:51
