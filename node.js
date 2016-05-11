@@ -48,7 +48,6 @@ app.post('/getRecipes', function (req, res) {
 });
 app.post('/getIngredients',function (req, res) {
     id = req.body['rId']
-    console.log(id);
     checkKey('http://food2fork.com/api/get?rId='+id, function (response) {
         res.send(response);
     });
