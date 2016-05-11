@@ -9,7 +9,7 @@ currentKeyId = 0;
 loop = false;
 
 // TODO: Remove python files
-// TODO: Update procfile
+// TODO: Update procfilea
 // TODO: Write check key loop
 
 function checkKey(query, cb) {
