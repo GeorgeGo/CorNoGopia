@@ -13,7 +13,7 @@ function Recipe(recipeObject) {
 	this.state = 0; // 0 is picture; 1 is card
 	this.flipper = function(){
 		if (this.className === 'recipeDiv') {
-			cardToggleOff();
+			// cardToggleOff();
 			$(this).empty();
 			$(this).addClass('recipe-card');
 			$(this).removeClass('recipeDiv');
@@ -68,7 +68,7 @@ function Recipe(recipeObject) {
 			var that = this;
 			function flipper() {
 				if (that.className === 'recipeDiv') {
-					cardToggleOff();
+					// cardToggleOff();
 					$(that).empty();
 					$(that).addClass('recipe-card');
 					$(that).removeClass('recipeDiv');
@@ -117,12 +117,13 @@ function Recipe(recipeObject) {
 							'rId': self.recipe_id
 						},
 						beforeSend: function() {
-							let img = $('<img src="static/images/ajax-loader.gif"/>');
+							let img = $('<span class="icon-spinner2 spinner"></span>');
 							img.css({'position': 'absolute',
 								'margin-left': '50%',
 								'left': '-50px',
 								'margin-top': '150px',
 								'width': '100px',
+								'font-size':'100px',
 								'height': '100px'});
 							$(that).append(img);
 						},
