@@ -320,6 +320,8 @@
 .bottom-bar-element{
 	display: inline-block;
 	height: 30px;
+	width: 100%;
+	font-size: 30px;
 	line-height: 30px;
 }
 
@@ -388,4 +390,29 @@
 	background-size: cover;
 	opacity: 0.7;
 
+}
+
+
+
+
+/*spinner*/
+@keyframes anim-rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.spinner {
+	display: inline-block;
+	animation: anim-rotate 0.75s infinite linear;
+	/*color: #fff;*/
+	text-shadow: 0 0 .25em rgba(255,255,255, .3);
+}
+.spinner--steps {
+	animation: anim-rotate 1s infinite steps(8);
+}
+.spinner--steps2 {
+	animation: anim-rotate 1s infinite steps(12);
 }
