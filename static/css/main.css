@@ -1,4 +1,6 @@
-
+body {
+    /*overflow: hidden;*/
+}
 .landing-container {
 	height: 100vh;
 	background-image: url('../images/table.jpg');

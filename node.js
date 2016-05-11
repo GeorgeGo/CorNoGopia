@@ -11,6 +11,10 @@ loop = false;
 // TODO: Remove python files
 // TODO: Update procfilea
 // TODO: Write check key loop
+// TODO: IPHOEN
+// TODO: OVERFLOW
+// TODO: 1flip
+// TODO: paymenow
 
 function checkKey(query, cb) {
     rp(query+'&key='+keys[currentKeyId])
