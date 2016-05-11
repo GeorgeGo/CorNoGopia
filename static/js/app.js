@@ -184,8 +184,6 @@ $('#ingredientsForm').keypress(function(event) {
 		event.preventDefault();
 	}
 });
-
-console.log('hi');
 $('#ingredientsForm').submit(function(event) {
 	compress();
 	getRecipes();
@@ -199,9 +197,9 @@ $('.to-top-button').click(function(){
 		'display':'none'
 	});
 });
-	$(window).scroll(function(){
-		$('.to-top-button').css({
-			'display':'block'
-		})
-
-	});
+$(window).scroll(function(){
+	$('.to-top-button').css({
+		'display':'block'
+	})
+});
+$('body').css('overflow', 'hidden');
