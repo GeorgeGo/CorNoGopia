@@ -1,6 +1,6 @@
 function enterMain(){
     $('.enter-button').on('click',function(e){
-        window.location = '/main'
+        window.location = '/index'
     })
 }
 function enterHover(){

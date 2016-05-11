@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express = require('express'),
     path = require('path'),
     bodyParser = require('body-parser'),
@@ -34,8 +35,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.get('/', function (req, res){
     res.sendFile(templates_dir+'landing.html');
 });
-app.get('/main', function (req, res){
-    res.sendFile(templates_dir+'main.html');
+app.get('/index', function (req, res){
+    res.sendFile(templates_dir+'index.html');
 });
 app.post('/getRecipes', function (req, res) {
     dict = req.body;
