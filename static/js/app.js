@@ -187,6 +187,7 @@ $('#ingredientsForm').keypress(function(event) {
 
 console.log('hi');
 $('#ingredientsForm').submit(function(event) {
+	compress();
 	getRecipes();
 	event.preventDefault();
 });
