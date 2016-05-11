@@ -10,7 +10,6 @@ loop = false;
 
 // TODO: Refactor flask functionality into express
 // TODO: Write check key loop
-// TODO: Write getRecipes route
 // TODO: Write getIngredients route
 
 function checkKey(query, cb) {
@@ -40,9 +39,15 @@ app.get('/main', function (req, res){
 });
 app.post('/getRecipes', function (req, res) {
     dict = req.body;
-    //TODO: send a compressed query
     var food = dict['ingredient_0'];
     checkKey('http://food2fork.com/api/search?q='+food,function (response) {
+        res.send(response);
+    });
+});
+app.post('/getIngredients',function (req, res) {
+    id = req.body['rId']
+    console.log(id);
+    checkKey('http://food2fork.com/api/get?rId='+id, function (response) {
         res.send(response);
     });
 });
