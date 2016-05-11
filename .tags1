@@ -4,3 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+express	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var express = require('express'),$/;"	variable	line:1
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^function checkKey(query, cb) {$/;"	function	line:13
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^function checkKey(query, cb) {$/;"	function	line:13
+templates_dir	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var templates_dir = __dirname+'\/templates\/';$/;"	variable	line:23
+static_dir	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var static_dir = __dirname+'\/static\/';$/;"	variable	line:24
+app	/Users/Jeongsoo/CS/Cornucopia/node.js	/^var app = express();$/;"	variable	line:26
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^    checkKey('http:\/\/food2fork.com\/api\/search?q='+food,function (response) {$/;"	function	line:41
+checkKey	/Users/Jeongsoo/CS/Cornucopia/node.js	/^    checkKey('http:\/\/food2fork.com\/api\/get?rId='+id, function (response) {$/;"	function	line:48

@@ -8,8 +8,6 @@ keys = ['373a612eeeae2813e001680f04b585db',
 currentKeyId = 0;
 loop = false;
 
-// TODO: Remove python files
-// TODO: Update procfilea
 // TODO: Write check key loop
 // TODO: IPHOEN
 // TODO: OVERFLOW
