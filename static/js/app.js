@@ -11,6 +11,49 @@ function Recipe(recipeObject) {
 	this.recipe_id = recipeObject['recipe_id'];
 	this.ingredients = [];
 	this.state = 0; // 0 is picture; 1 is card
+	this.flipper = function(){
+		if (this.className === 'recipeDiv') {
+			cardToggleOff();
+			$(this).empty();
+			$(this).addClass('recipe-card');
+			$(this).removeClass('recipeDiv');
+			var recipe_card_ingredients_list = $('<ul></ul>');
+			for (var i = 0; i < self.ingredients.length; i++) {
+				recipe_card_ingredients_list.append('<li>' + self.ingredients[i] + '</li>');
+			}
+			var recipe_card_ingredients_list_container = $('<div></div>');
+			// recipe_card_ingredients_list_container.append(recipe_card_ingredients_list);
+			recipe_card_ingredients_list_container.append(recipe_card_ingredients_list);
+			$(this).append(recipe_card_ingredients_list_container);
+			recipe_card_ingredients_list_container.addClass('recipe-card-ingredients');
+			$(this).css('background-image', 'none');
+			recipe_card_ingredients_list.addClass('ingredient-card-list');
+			// $(this).append(recipe_card_ingredients_list);
+			var sourceBtn = $('<div>Go to Source</div>');
+			sourceBtn.addClass('source-btn');
+			sourceBtn.click(function () {
+				window.open(self.source_url);
+			$('.recipe-card')
+			});
+			$(this).append(sourceBtn);
+			var saveBtn = $('<div>Save Recipe</div>');
+			saveBtn.addClass('save-btn');
+			saveBtn.click(function () {
+
+			});
+			console.log($('.recipe-card'));
+			// $(this).append(saveBtn);
+		} else if (this.className === 'recipe-card') {
+			$(this).empty();
+			$(this).addClass('recipeDiv');
+			$(this).removeClass('recipe-card');
+			$(this).css('backgroundRepeat', "no-repeat");
+			var recipeNameDiv = $('<div>'+self.title+'</div>');
+			recipeNameDiv.addClass('recipeNameDiv');
+			$(this).append(recipeNameDiv);
+			$(this).css('background-image', "url(" + self.image_url + ")");
+		}
+	}
 	this.get_div = function() {
 		var self = this;
 		var div = $('<div></div>');
@@ -25,6 +68,7 @@ function Recipe(recipeObject) {
 			var that = this;
 			function flipper() {
 				if (that.className === 'recipeDiv') {
+					cardToggleOff();
 					$(that).empty();
 					$(that).addClass('recipe-card');
 					$(that).removeClass('recipeDiv');
@@ -44,6 +88,7 @@ function Recipe(recipeObject) {
 					sourceBtn.addClass('source-btn');
 					sourceBtn.click(function () {
 						window.open(self.source_url);
+					$('.recipe-card')
 					});
 					$(that).append(sourceBtn);
 					var saveBtn = $('<div>Save Recipe</div>');
@@ -51,6 +96,7 @@ function Recipe(recipeObject) {
 					saveBtn.click(function () {
 
 					});
+					console.log($('.recipe-card'));
 					// $(that).append(saveBtn);
 				} else if (that.className === 'recipe-card') {
 					$(that).empty();
@@ -157,6 +203,5 @@ $('.to-top-button').click(function(){
 		$('.to-top-button').css({
 			'display':'block'
 		})
-		console.log('ohshit');
+
 	});
-	console.log('ohshit2');

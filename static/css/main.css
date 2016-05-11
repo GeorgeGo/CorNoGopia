@@ -156,7 +156,7 @@
   box-shadow: 0 0 5px 1px #969696;
 }
 .output-button {
-	float: left;
+	float: right;
 	display: inline-block;
 	text-align: center;
 	line-height: normal;
@@ -224,12 +224,23 @@
 	height: 400px;
 	margin-left: 2%;
 	margin-bottom: 1%;
-	background-color: blue;
+	background-color: white;
 	background-size: cover;
 	background-position: center;
 	position: relative;
 	display: inline-block;
 	z-index: 1;
+}
+.recipe-card-ingredients{
+	height: 320px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 1%;
+	padding-right: 1%;
+	width: 98%;
+	background-color: white;
+	overflow-y: scroll;
+	position: absolute;
 }
 .recipe-name-card {
 	font-family: serif;
@@ -243,25 +254,28 @@
 .ingredient-card-list {
 	font-family: serif;
 	font-size: 20px;
+	/*height: 100%;*/
 	background-color: white;
-	position: absolute;
-	top: 2px;
-	left: 2px;
+
 }
 .source-btn {
-	background-color: red;
-	color: white;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
-.save-btn {
-	background-color: red;
+	background-color: #EC8E58;
+	height: 60px;
+	line-height: 60px;
+	width: 100%;
+	text-align: center;
 	color: white;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
+/*.save-btn {
+	background-color: red;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}*/
 
 .number-ul {
 	width: 100%;
@@ -274,7 +288,7 @@
 }
 .number-li-link {
 	display: block;
-	background-color: #dcdcdc;
+	background-color: #EC8E58;
 	text-decoration: none;
 	width: 100%;
 	z-index: 2;
@@ -300,9 +314,14 @@
 	display: none;
 	position: fixed;
 	bottom: 0;
+	opacity: 0.8;
 	z-index: 1;
 }
-
+.bottom-bar-element{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
 
 
 
