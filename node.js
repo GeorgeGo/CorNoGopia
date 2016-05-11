@@ -8,9 +8,9 @@ keys = ['373a612eeeae2813e001680f04b585db',
 currentKeyId = 0;
 loop = false;
 
-// TODO: Refactor flask functionality into express
+// TODO: Remove python files
+// TODO: Update procfile
 // TODO: Write check key loop
-// TODO: Write getIngredients route
 
 function checkKey(query, cb) {
     rp(query+'&key='+keys[currentKeyId])
