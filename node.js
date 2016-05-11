@@ -14,7 +14,7 @@ loop = false;
 // TODO: IPHOEN
 // TODO: OVERFLOW
 // TODO: 1flip
-// TODO: paymenow
+// TODO: payme
 
 function checkKey(query, cb) {
     rp(query+'&key='+keys[currentKeyId])
