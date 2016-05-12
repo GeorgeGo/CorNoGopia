@@ -58,4 +58,4 @@ app.use(function (req,res) {
     res.status(404).sendFile(templates_dir+'404.html');
 });
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
