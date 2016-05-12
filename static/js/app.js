@@ -152,13 +152,13 @@ $('.to-top-button').click(function(){
 	$("body, html").animate({
 		scrollTop: $('.page-one').offset().top
 	}, 600);
-	$('.to-top-button').css({
-		'display':'none'
-	});
+	// $('.to-top-button').css({
+	// 	'display':'none'
+	// });
 });
-	$(window).scroll(function(){
-		$('.to-top-button').css({
-			'display':'block'
-		})
-
-	});
+	// $(window).scroll(function(){
+	// 	$('.to-top-button').css({
+	// 		'display':'block'
+	// 	})
+	//
+	// });
