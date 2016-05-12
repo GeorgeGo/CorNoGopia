@@ -10,9 +10,8 @@ loop = false;
 
 // TODO: Write check key loop
 // TODO: IPHOEN
+// TODO: animate on flip
 // TODO: OVERFLOW
-// TODO: 1flip
-// TODO: payme
 
 function checkKey(query, cb) {
     rp(query+'&key='+keys[currentKeyId])
