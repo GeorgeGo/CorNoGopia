@@ -5,13 +5,13 @@ var express = require('express'),
 
 keys = ['373a612eeeae2813e001680f04b585db',
         '5dbe8dc691de2b3d8db331019416a9e5']
-currentKeyId = 1;
+currentKeyId = 0;
 loop = false;
 
 // TODO: Write check key loop
 // TODO: IPHOEN
-// TODO: animate on flip
 // TODO: OVERFLOW
+// TODO: todo make animation not look choppy
 
 function checkKey(query, cb) {
     rp(query+'&key='+keys[currentKeyId])
