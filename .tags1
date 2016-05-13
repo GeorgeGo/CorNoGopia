@@ -12,17 +12,19 @@ visualize_recipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^    this.visu
 RecipeArray.visualize_recipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^    this.visualize_recipes = function() {$/;"	method	line:11
 RecipeArray	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function RecipeArray() {$/;"	class	line:3
 Recipe	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function Recipe(recipeObject) {$/;"	function	line:20
-get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^    this.get_div = function() {$/;"	function	line:71
-Recipe.get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^    this.get_div = function() {$/;"	method	line:71
-beforeSend	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    beforeSend: function() {$/;"	function	line:89
-complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    complete: function() {$/;"	function	line:102
-success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    success: function(response) {$/;"	function	line:107
-error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    error: function(error) {$/;"	function	line:115
-get_card	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_card = function () {$/;"	function	line:126
-Recipe.get_card	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_card = function () {$/;"	method	line:126
+toggle	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.toggle = function () {$/;"	function	line:67
+Recipe.toggle	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.toggle = function () {$/;"	method	line:67
+get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^    this.get_div = function() {$/;"	function	line:79
+Recipe.get_div	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^    this.get_div = function() {$/;"	method	line:79
+beforeSend	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    beforeSend: function() {$/;"	function	line:97
+complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    complete: function() {$/;"	function	line:110
+success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    success: function(response) {$/;"	function	line:114
+error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^                    error: function(error) {$/;"	function	line:122
+get_card	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_card = function () {$/;"	function	line:132
+Recipe.get_card	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^	this.get_card = function () {$/;"	method	line:132
 Recipe	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function Recipe(recipeObject) {$/;"	class	line:20
-getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:155
-complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^        complete: function() {$/;"	function	line:159
-success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^        success: function(response) {$/;"	function	line:167
-error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^        error: function(error) {$/;"	function	line:174
-getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:155
+getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:160
+complete	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^        complete: function() {$/;"	function	line:164
+success	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^        success: function(response) {$/;"	function	line:172
+error	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^        error: function(error) {$/;"	function	line:179
+getRecipes	/Users/Jeongsoo/CS/Cornucopia/static/js/app.js	/^function getRecipes() {$/;"	function	line:160

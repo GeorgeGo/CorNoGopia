@@ -27,17 +27,13 @@ function Recipe(recipeObject) {
     this.image_url = recipeObject['image_url'];
     this.recipe_id = recipeObject['recipe_id'];
     this.ingredients = [];
-    this.state = 0; // 0 is picture; 1 is card
+    this.isDiv = true; // 0 is picture; 1 is card
     // this.flipper = function(ctx) {
 	// 	if (ctx == undefined) {
 	// 		ctx = this.context;
 	// 	}
     //     if (this.state == 0) {
-	// 		_.each(recipeArr.recipes,function (recipe) {
-	// 			if(recipe.state == 1){
-	// 				recipe.flipper();
-	// 			}
-	// 		});
+	//
     //         $(ctx).empty();
     //         $(ctx).toggleClass('recipe-card recipeDiv');
     //         var recipe_card_ingredients_list = $('<ul></ul>');
@@ -68,6 +64,18 @@ function Recipe(recipeObject) {
 	// 		this.state = 0;
     //     }
     // }
+	this.toggle = function () {
+		$('#'+this.recipe_id+'div').toggle();
+		$('#'+this.recipe_id+'card').toggle();
+		if(this.isDiv) {
+			_.each(recipeArr.recipes,function (recipe) {
+				if(!recipe.isDiv){
+					recipe.toggle();
+				}
+			});
+		}
+		this.isDiv = !this.isDiv;
+	}
     this.get_div = function() {
         var self = this;
         var div = $('<div></div>');
@@ -101,8 +109,7 @@ function Recipe(recipeObject) {
                     },
                     complete: function() {
                         $(that).children('span').remove();
-						$('#'+self.recipe_id+'div').hide();
-						$('#'+self.recipe_id+'card').show();
+						self.toggle();
                     },
                     success: function(response) {
                         var r = JSON.parse(response);
@@ -117,8 +124,7 @@ function Recipe(recipeObject) {
                     }
                 });
             } else {
-				$('#'+self.recipe_id+'div').hide();
-				$('#'+self.recipe_id+'card').show();
+				self.toggle();
             }
         });
         return div;
@@ -143,8 +149,7 @@ function Recipe(recipeObject) {
 		card.append(sourceBtn);
 		card.click(function (e) {
 			if (e.target.className !== 'source-btn') {
-				$('#'+self.recipe_id+'card').hide();
-				$('#'+self.recipe_id+'div').show();
+				self.toggle();
 			}
 		});
 		card.hide();
