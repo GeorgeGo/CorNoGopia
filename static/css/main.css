@@ -139,16 +139,14 @@ body {
     background-color: white;
     font-size: 150%;
     padding: 0 0 0 0;
-    border: 2px solid #EC8E58;
+    /*border: 2px solid #EC8E58;*/
+    border: solid 1px #dcdcdc;
+    -webkit-border-radius: 0px;
     z-index: 2;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-}
-.new-ingredient {
-    display: inline-block;
-    border: solid 1px #dcdcdc;
     transition: box-shadow 0.3s, border 0.3s;
 }
 .new-ingredient:focus, .new-ingredient.focus {
