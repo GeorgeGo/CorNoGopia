@@ -60,7 +60,7 @@ function Recipe(recipeObject) {
         var recipeNameDiv = $('<div>' + this.title + '</div>');
         recipeNameDiv.addClass('recipeNameDiv');
         div.append(recipeNameDiv);
-        div.click(function(e) {
+        div.on('click',function(e) {
             var that = this;
             if (self.ingredients == 0) {
                 $.post({
@@ -69,7 +69,7 @@ function Recipe(recipeObject) {
                         'rId': self.recipe_id
                     },
                     beforeSend: function() {
-                        let span = $('<span class="icon-spinner2 spinner"></span>');
+                        var span = $('<span class="icon-spinner2 spinner"></span>');
                         span.css({
                             'position': 'absolute',
                             'margin-left': '50%',
@@ -88,7 +88,7 @@ function Recipe(recipeObject) {
                     success: function(response) {
                         var r = JSON.parse(response);
                         self.ingredients = r['recipe']['ingredients'];
-                        let list = $('#' + self.recipe_id + 'card #list');
+                        var list = $('#' + self.recipe_id + 'card #list');
                         for (var i = 0; i < self.ingredients.length; i++) {
                             list.append('<li>' + self.ingredients[i] + '</li>');
                         }
@@ -117,11 +117,11 @@ function Recipe(recipeObject) {
         recipe_card_ingredients_list.addClass('ingredient-card-list');
         var sourceBtn = $('<div>Go to Source</div>');
         sourceBtn.addClass('source-btn');
-        sourceBtn.click(function() {
+        sourceBtn.on('click',function() {
             window.open(self.source_url);
         });
         card.append(sourceBtn);
-        card.click(function(e) {
+        card.on('click',function(e) {
             if (e.target.className !== 'source-btn') {
                 self.toggle();
             }
@@ -156,7 +156,7 @@ function getRecipes() {
     });
 }
 
-$('#getRecipes').click(function() {
+$('#getRecipes').on('click',function() {
     $('#ingredientsForm').submit();
 });
 
@@ -172,7 +172,7 @@ $('#ingredientsForm').submit(function(event) {
     getRecipes();
     event.preventDefault();
 });
-$('.to-top-button').click(function() {
+$('.to-top-button').on('click',function() {
     $("body, html").animate({
         scrollTop: $('.page-one').offset().top
     }, 600);

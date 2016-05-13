@@ -28,15 +28,15 @@ function compress(){
            items.push(obj.value.trim());
         }
     });
-    let compressValue = '';
+    var compressValue = '';
     if (items.length > 0) {
         for (var i=0;i<items.length-1;i++){
             compressValue += items[i]+', ';
         }
         compressValue += items.slice(-1)[0];
-        let numberOfIngredients = 0;
+        var numberOfIngredients = 0;
         items.forEach(function(str){
-            let count = str.split(',').length;
+            var count = str.split(',').length;
             numberOfIngredients += count;
         });
         updateDropdownLabel(numberOfIngredients);
@@ -50,10 +50,10 @@ function compress(){
 }
 
 function expand(){
-    let firstField = $('#ingredient_0');
+    var firstField = $('#ingredient_0');
     if (firstField.val()) {
         if(firstField.val().indexOf(',')!=-1){
-            let arr = firstField.val().split(',');
+            var arr = firstField.val().split(',');
             $('#ingredientsForm').empty();
             for(var i=0;i<arr.length;i++){
                 var formEntry = $("<input type=\"text\" id=\"ingredient_"+(i-1)+"\" name=\"ingredient_"+i+"\" class=\"new-ingredient\" value=\""+arr[i].replace(/^ /g,'')+"\">");
