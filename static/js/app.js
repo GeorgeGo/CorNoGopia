@@ -38,9 +38,9 @@ function Recipe(recipeObject) {
     this.ingredients = [];
     this.isDiv = true; // 0 is picture; 1 is card
     this.toggle = function() {
-		$('#' + this.recipe_id).toggleClass('flip');
-		$('#' + this.recipe_id + 'div').toggle();
-        $('#' + this.recipe_id + 'card').toggle();
+        $('#' + this.recipe_id).toggleClass('flip');
+        // $('#' + this.recipe_id + 'div').toggle();
+        // $('#' + this.recipe_id + 'card').toggle();
         if (this.isDiv) {
             _.each(recipeArr.recipes, function(recipe) {
                 if (!recipe.isDiv) {
@@ -126,7 +126,7 @@ function Recipe(recipeObject) {
                 self.toggle();
             }
         });
-        card.hide();
+        // card.hide();
         return card;
     }
 }
