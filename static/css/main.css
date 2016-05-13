@@ -210,6 +210,7 @@ body {
 }
 .recipe-container.flip .recipe-flipper {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .recipe-flipper {
@@ -226,11 +227,11 @@ body {
     left: 0;
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .recipeDiv {
     background-size: cover;
     background-position: center;
-    transform: rotateY(0deg);
     z-index: 2;
 }
 .recipeNameDiv {
@@ -244,6 +245,7 @@ body {
 .recipe-card {
     background-color: white;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 .recipe-card-ingredients {
     height: 320px;

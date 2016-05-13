@@ -8,10 +8,8 @@ keys = ['373a612eeeae2813e001680f04b585db',
 currentKeyId = 0;
 loop = false;
 
-// TODO: Write check key loop
 // TODO: IPHOEN
 // TODO: OVERFLOW
-// TODO: todo make animation not look choppy
 
 function checkKey(query, cb) {
     rp(query+'&key='+keys[currentKeyId])
@@ -19,7 +17,11 @@ function checkKey(query, cb) {
             cb(htmlString);
         })
         .catch(function () {
-
+            key_id += 1;
+            if (key_id > keys.length-1) {
+                cb('we ran outta keys');
+            }
+            checkKey(query, cb);
         });
 }
 
