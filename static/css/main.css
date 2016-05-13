@@ -165,6 +165,7 @@ body {
     background-color: #EC8E58;
     height: 60px;
     line-height: 60px;
+    cursor: pointer;
 }
 .output-button-label {
     display: inline-block;
@@ -179,6 +180,7 @@ body {
     height: 100%;
     text-align: center;
     line-height: 60px;
+    cursor: pointer;
 }
 .dropdown-label {
     width: 60px;
@@ -224,6 +226,7 @@ body {
     backface-visibility: hidden;
 }
 .recipeDiv {
+    cursor: pointer;
     background-size: cover;
     background-position: center;
     transform: rotateY(0deg);
@@ -238,6 +241,7 @@ body {
     left: 2px;
 }
 .recipe-card {
+    cursor: pointer;
     background-color: white;
     transform: rotateY(180deg);
 }
@@ -277,6 +281,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
+    cursor: pointer;fix:
 }
 
 /*.save-btn {
@@ -298,6 +303,7 @@ body {
 }
 .number-li-link {
     display: block;
+    cursor: pointer;
     background-color: #EC8E58;
     text-decoration: none;
     width: 100%;
