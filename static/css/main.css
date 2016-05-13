@@ -213,6 +213,8 @@ body {
 	position: relative;
 	display: inline-block;
 	z-index: 1;
+
+    transition: 1s;
 }
 .recipeNameDiv {
 	font-family: serif;
@@ -234,6 +236,9 @@ body {
 	position: relative;
 	display: inline-block;
 	z-index: 1;
+
+    transition: 1s;
+    /*transform: rotateY(180deg);*/
 }
 .recipe-card-ingredients{
 	height: 320px;

@@ -58,8 +58,7 @@ function Recipe(recipeObject) {
 			this.state = 1;
         } else if (this.state == 1) {
             $(ctx).empty();
-            $(ctx).addClass('recipeDiv');
-            $(ctx).removeClass('recipe-card');
+			$(ctx).toggleClass('recipe-card recipeDiv');
             $(ctx).css('backgroundRepeat', "no-repeat");
             var recipeNameDiv = $('<div>' + this.title + '</div>');
             recipeNameDiv.addClass('recipeNameDiv');
