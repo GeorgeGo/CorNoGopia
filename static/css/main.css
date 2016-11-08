@@ -149,10 +149,6 @@ body {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-}
-.new-ingredient {
-    display: inline-block;
-    border: solid 1px #dcdcdc;
     transition: box-shadow 0.3s, border 0.3s;
 }
 .new-ingredient:focus, .new-ingredient.focus {
