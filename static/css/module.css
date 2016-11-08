@@ -53,7 +53,7 @@
         float: left;
         height: 100%;
         font-size: 75%;
-        padding: 0 0 0 0;
+        padding: 0 0 0 .5em;
         z-index: 2;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -112,7 +112,7 @@
     }
     .number-li-link {
         display: block;
-        background-color: #dcdcdc;
+        background-color: #EC8E58;
         text-decoration: none;
         width: 100%;
         z-index: 2;
@@ -249,7 +249,7 @@
         float: left;
         height: 100%;
         font-size: 150%;
-        padding: 0 0 0 0;
+        padding: 0 0 0 .5em;
         z-index: 2;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -421,7 +421,7 @@
         float: left;
         height: 100%;
         font-size: 150%;
-        padding: 0 0 0 0;
+        padding: 0 0 0 .5em;
         z-index: 2;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
