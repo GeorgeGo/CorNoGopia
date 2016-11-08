@@ -1,0 +1,27 @@
+{
+  "name": "cornucopia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeGo/CorNoGopia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeGo/CorNoGopia/issues"
+  },
+  "homepage": "https://github.com/GeorgeGo/CorNoGopia#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "q": "^1.4.1",
+    "request": "^2.72.0",
+    "request-promise": "^3.0.0"
+  }
+}

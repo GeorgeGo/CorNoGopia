@@ -1,0 +1,15 @@
+.top {
+	text-align: center;
+}
+
+.msg {
+	text-align: center;
+}
+
+.pic {
+	height: 400px;
+	width: 330px;
+	position: relative;
+	margin-left: 50%;
+	left: -165px;
+}

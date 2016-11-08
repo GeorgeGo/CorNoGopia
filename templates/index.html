@@ -3,51 +3,65 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="../static/css/reset.css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="../static/css/main.css" media="screen" title="no title" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/css/reset.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="/css/main.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="/css/module.css" media="screen" charset="utf-8">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="stylesheet " href="/vendors/iconfonts/style.css">
 	<title>Cornucopia</title>
 </head>
 
 <body>
-	<h1 class="main-header">Cornucopia</h1>
-	<div class="flav-town-holder">
-		<div class="flav-town">
-			<p class='flav-town-text'>
-				welcome 2 flavortown
-			</p>
+	<!-- <div class="main-background"> -->
+	<div class="main-container">
+		<div class="page-one">
+			<div class="title-search">
+				<div class="title-text">
+					<h1 class="main-header">Cornucopia</h1>
+				</div>
+				<div class="search-area">
+				<div class="search-top-row">
+					<div id="dd" class="wrapper-dropdown" tabindex="1">
+						<span class="dropdown-label">1</span>
+						<ul class="number-ul">
+							<li class="number-li" id="number-li-1"><a class="number-li-link" href="#">1</a></li>
+							<li class="number-li" id="number-li-2"><a class="number-li-link" href="#">2</a></li>
+							<li class="number-li" id="number-li-3"><a class="number-li-link" href="#">3</a></li>
+							<li class="number-li" id="number-li-4"><a class="number-li-link" href="#">4</a></li>
+							<li class="number-li" id="number-li-5"><a class="number-li-link" href="#">5</a></li>
+						</ul>
+					</div>
+					<form id="ingredientsForm" class='ingredient-form'>
+						<input type="text" name="ingredient_0" id="ingredient_0" class="new-ingredient" placeholder="Enter your ingredients here">
+					</form>
+					<div id='getRecipes' class="output-button" href="recipeDivHolder"><span class="output-button-label">GET RECIPE</span></div>
+				</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="search-area">
-		<select id="ingredientsNumber" class="drop-down-num" name="">
-			<option selected value='1'>1</option>
-			<option value='2'>2</option>
-			<option value='3'>3</option>
-			<option value='4'>4</option>
-			<option value='5'>5</option>
-		</select>
-		<form id="ingredientsForm" class='ingredient-form'>
-			<input type="text" name="ingredient" class="new-ingredient">
-		</form>
-		<div id='getRecipes' class="output-button"><span>GET RECIPE</span></div>
-	</div>
+		<div id="recipeDivHolder" class=""></div>
+		<div class='to-top-button'>
+			<li class="bottom-bar-element icon-home"></li>
+		</div>
 
-	<!-- <div id="dd" class="wrapper-dropdown-1" tabindex="1">
-		<span>Gender</span>
-	    <ul class="dropdown">
-	        <li><a href="#">Male</a></li>
-	        <li><a href="#">Female</a></li>
-	    </ul>
+	</div>
+	<!-- </div> -->
+	<!-- <div class="bottom-bar">
+		<div class="grocery">
+			<p class="grocery-text">Go to Grocery List</p>
+		</div>
 	</div> -->
 
 
-	<div id="recipeDivHolder" class=""></div>
+	<script type="text/javascript" src="/vendors/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/vendors/modernizr.custom.79639.js"></script>
+	<script type="text/javascript" src="/vendors/underscore.string.js"></script>
+	<script type="text/javascript" src="/vendors/underscore.js"></script>
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/dropdown.js"></script>
+	<script type="text/javascript" src="/js/card.js"></script>
 
-
-	<script type="text/javascript" src="../static/vendors/jquery-2.2.0.min.js"></script>
-	<script type="text/javascript" src="../static/vendors/modernizr.custom.79639.js"></script>
-	<script type="text/javascript" src="../static/js/app.js"></script>
-	<script type="text/javascript" src="../static/js/dropdown.js"></script>
-	<script type="text/javascript" src="../static/js/card.js"></script>
 
 </body>
 
